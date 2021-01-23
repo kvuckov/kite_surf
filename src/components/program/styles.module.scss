@@ -1,0 +1,10 @@
+.program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12rem 10%;
+    
+    @media (max-width: 767px) {
+        padding: 15vw 5vw;
+    }
+}
