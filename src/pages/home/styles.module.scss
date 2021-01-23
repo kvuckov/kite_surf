@@ -1,0 +1,31 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+
+    .services {
+        display: flex;
+        justify-content: space-around;
+        padding: 8rem 5vw;
+        flex-wrap: wrap;
+        background-color: #eef3f5;
+
+        @media (max-width: 1150px) {
+            justify-content: space-between;
+        }
+    
+        @media (max-width: 767px) {
+            justify-content: space-around;
+            padding: 15vw 5vw;
+        }
+
+        .heading {
+            width: 320px;
+            justify-content: center;
+            box-sizing: border-box;
+            
+            @media (min-width: 768px) {
+                padding: 2rem;
+            }
+        }
+    }
+}
