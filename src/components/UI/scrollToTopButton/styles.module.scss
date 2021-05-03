@@ -1,0 +1,25 @@
+@import '../../../assets/scss/colors';
+
+.scrollToTop {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5);
+    filter: hue-rotate(90deg);
+
+    &:before {
+        content: '';
+        background-image: url('../../../assets/svg/arrow-up.svg');
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+    }
+}

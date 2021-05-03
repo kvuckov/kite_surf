@@ -1,8 +1,10 @@
+@import '../../../assets/scss/colors';
+
 .borderText {
     text-align: left;
 
     @media (min-width: 768px) {
-        border-left: 2px solid #FBB13D;
+        border-left: 2px solid $primaryColor;
         padding-bottom: 10px;
         padding-left: 50px;
         padding-top: 10px;

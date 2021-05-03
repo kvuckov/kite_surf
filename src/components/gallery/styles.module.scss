@@ -1,12 +1,14 @@
+@import '../../assets/scss/colors';
+@import '../../assets/scss/mixins';
+
 .gallery {
     display: flex;
     justify-content: space-around;
-    padding: 12rem 10%;
-    background-color: #0d425e;
+    background-color: $darkBlue;
+    @include container;
     
     @media (max-width: 767px) {
         flex-direction: column;
-        padding: 15vw 5vw;
     }
     
     &_left {

@@ -1,3 +1,5 @@
+@import '../../../assets/scss/colors';
+
 .heading {
     display: flex;
     flex-direction: column;
@@ -13,7 +15,7 @@
         margin-bottom: .25rem;
 
         &:before {
-            background-color: #0d425e;
+            background-color: $darkBlue;
             content: "";
             display: inline-block;
             height: 1px;
@@ -51,10 +53,10 @@
 .secondary {
     .heading {
         &_first {
-            color: #FBB13D;
+            color: $primaryColor;
     
             &:before {
-                background-color: #FBB13D
+                background-color: $primaryColor
             }
         }
     
@@ -70,4 +72,22 @@
 
 .tertionary {
     align-items: center;
+    
+    @media (max-width: 767px) {
+        align-items: flex-start;
+    }
+}
+
+.tertionary_opposite {
+    align-items: flex-start;
+    
+    @media (max-width: 767px) {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.center {
+    align-items: center;
+    text-align: center;
 }

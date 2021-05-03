@@ -1,3 +1,5 @@
+@import '../../assets/scss/colors';
+
 .about {
     display: flex;
     justify-content: space-around;
@@ -7,7 +9,7 @@
     background-position: center;
     background-size: cover;
     overflow: hidden;
-    background-color: #eef3f5;
+    background-color: $grey;
     padding: 10rem 10%;
 
     @media (max-width: 1150px) {

@@ -1,0 +1,15 @@
+@mixin container {
+    padding: 12rem 10%;
+    
+    @media (max-width: 767px) {
+        padding: 15vw 5vw;
+    }
+}
+
+@mixin small-container {
+    padding: 8rem 10%;
+
+    @media (max-width: 767px) {
+        padding: 15vw 5vw;
+    }
+}

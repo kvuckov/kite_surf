@@ -1,0 +1,35 @@
+@import '../../assets/scss/colors';
+
+.smallBanner {
+    display: flex;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 0;
+    background-attachment: fixed;
+    padding: 185px 10% 70px;
+
+    @media (max-width: 767px) {
+        padding: 30vw 5vw 8vw;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $darkBlue;
+        opacity: 0.5;
+    }
+
+    h2 {
+        line-height: 1;
+        font-size: 40px;
+        color: white;
+        z-index: 0;
+        font-weight: 400;
+    }
+}

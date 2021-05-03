@@ -1,10 +1,12 @@
+@import '../../../assets/scss/colors';
+
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     border: 2px solid transparent;
-    border-color: #FBB13D;
+    border-color: $primaryColor;
     overflow: hidden;
     position: relative;
     width: 170px;
@@ -31,7 +33,7 @@
 
     svg rect, svg path, svg polyline {
         fill: none;
-        stroke: #FBB13D;
+        stroke: $primaryColor;
         stroke-width: 4px;
     }
 
@@ -49,17 +51,16 @@
 
     &_primary {
         &:hover {
-    
-
             &:before {
-                background-color: #fbb23dc0;
+                background-color: $darkPrimaryColor;
             }
         }
+
         &:before {
             content: "";
             position: absolute;
             z-index: -1;
-            background-color: #FBB13D;
+            background-color: $primaryColor;
             width: 100%;
             height: 100%;
         }
@@ -87,7 +88,7 @@
         }
 
         &:before {
-            background-color: #FBB13D;
+            background-color: $primaryColor;
             content: "";
             height: 120%;
             left: -10%;
@@ -107,7 +108,7 @@
         height: 25px;
 
         &:hover svg rect, svg polyline {
-            stroke:#FBB13D;
+            stroke:$primaryColor;
         }
 
         &:hover svg rect {

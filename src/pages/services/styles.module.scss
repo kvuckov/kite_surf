@@ -1,0 +1,86 @@
+@import '../../assets/scss/colors';
+@import '../../assets/scss/mixins';
+
+.services {
+    display: flex;
+    flex-direction: column;
+
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        @include small-container;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+
+        &_left {
+            width: 30%;
+
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-bottom: 25px;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                border: 1px solid $darkGrey;
+                margin: 0;
+                
+                li {
+                    padding: 25px 40px;
+                    font-weight: 500;
+                    background-color: transparent;
+                    transition: all 0.3s ease-in-out;
+                    transition: all 0.2s ease-in-out 0s;
+                    color: $darkBlue;
+                    cursor: pointer;
+
+                    &:not(:first-child) {
+                        border-top: 1px solid $grey;
+                    }
+
+                    &.current {
+                        background-color: $grey;
+                    }
+                }
+            }
+        }
+
+        &_right {
+            width: 68%;
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            &_text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 40px;
+                background-color: $grey;
+                z-index: 0;
+
+                @media (max-width: 767px) {
+                    align-items: center;
+                }
+                
+                
+                p {
+                    color: $lightBlue;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

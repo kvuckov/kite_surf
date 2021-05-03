@@ -1,35 +1,30 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import { useTranslation } from "react-i18next";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+import Temp from '../../assets/img/banner.jpg';
 import styles from './styles.module.scss';
 
-import Heading from '../UI/heading';
+const Heading = React.lazy(() => import('../UI/heading'));
 
-import Temp from '../../assets/img/banner.jpg'
+const Gallery = () => {
+    const { t } = useTranslation();
 
-const content = {
-    first: "About us",
-    second: "Our little history",
-    third: "We want our clients to feel awesome and unique."
-}
-
-const Gallery = props => {
     return (
         <div className={styles.gallery} >
-            {/* <img src={Temp} /> */}
             <div className={styles.gallery_left}>
-                <Heading content={content} theme={'secondary'} />
-                <img src={Temp} />
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Heading content={t("home.gallery", { returnObjects: true })} theme={'secondary'} />
+                </Suspense>
+                <LazyLoadImage src={Temp} />
             </div>
             <div className={styles.gallery_right}>
-                <img src={Temp} className={styles.gallery_right_mainImg} />
+                <LazyLoadImage src={Temp} className={styles.gallery_right_mainImg} />
                 <div className={styles.gallery_right_secondaryImages}>
-                    <img src={Temp} />
-                    <img src={Temp} />
+                    <LazyLoadImage src={Temp} />
+                    <LazyLoadImage src={Temp} />
                 </div>
             </div>
-            {/* <div className={styles.gallery_content}>
-                <Heading content={content} style={styles.gallery_heaing} />
-                <Button text="Book a lesson" />
-            </div> */}
         </div>
     );
 };

@@ -1,0 +1,77 @@
+@import '../../../assets/scss/colors';
+
+.accordionItem {
+    border-radius: 0;
+    border: 1px solid $darkGrey;
+    background: none;
+    margin-bottom: -1px;
+    color: #0d425e;
+
+    &_heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 30px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover, &.open {
+            background-color: $grey;
+        }
+
+        &.open span {
+            background-color: $primaryColor;
+
+            &:before {
+                transform: rotate(-90deg);
+            }
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        span {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid $darkGrey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease-in-out;
+
+            &:before {
+                content: '';
+                background-image: url('../../../assets/svg/arrow-right.svg');
+                width: 10px;
+                height: 10px;
+                background-size: cover;
+                transform: rotate(90deg);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+
+    &_content {
+        background-color: $grey;
+        transition: all 0.3s ease-in-out;
+        padding: 0 80px 30px;
+        position: relative;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            display: inline-block;
+            width: 2px;
+            height: calc(100% - 30px);
+            background-color: $primaryColor;
+        }
+    }
+    
+}

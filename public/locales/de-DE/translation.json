@@ -1,4 +1,193 @@
 {
-    "title": "german",
-    "placeholder": "What needs to be done in germany?"
+    "navigation": [
+        { "id": 1, "name": "Hauz" , "link": "/" },
+        { "id": 2, "name": "About" , "link": "/about" },
+        {
+            "id": 3,
+            "name": "Services" ,
+            "link": "/services",
+            "subLink": "/services_details",
+            "subLinks": [
+                "Beginners course",
+                "Triel course",
+                "Improvement"
+            ]
+        },
+        { "id": 4, "name": "Pricing" , "link": "/pricing" },
+        { "id": 5, "name": "Contact" , "link": "/contact" }
+    ],
+    "home": {
+        "banner": [
+            "some german translate",
+            "kite school",
+            "zadar"
+        ],
+        "about": {
+            "title": {
+                "first": "About Us",
+                "second": "Our Little History",
+                "third": "Passion and obsession to freedom of movement."
+            },
+            "description": {
+                "first": "We have been teaching kitesurfing in many different environments and situations. Whether it is flat or choppy, deep or shallow, high or low wind, we know what to do to make your kiting experience more productive and more fun.",
+                "second": "Safety is something you definitely have to take seriously. Fortunately, kites have come a long way regarding safety since the early days. The invention and refinment of depower and safety systems has made this beautiful sport accessible to wide audience."
+            }
+        },
+        "location": {
+            "title": {
+                "first": "Location",
+                "second": "Great spots",
+                "third": "Kitesurfing lessons on sand beaches in Northern Dalmatia"
+            },
+            "description": "20 km north from the city of Zadar - more precisely in the vicinity of city of Nin. This is area with sand beaches and a lot of shallow waters. This is great for beginners and learning. The exact place depends on wind direction but all the beaches are nearby, we go to places where we can get the best wind."
+        },
+        "services": {
+            "title": {
+                "first": "Services",
+                "second": "Let’s Start An Education!",
+                "third": "Kitesurfing lessons on sand beaches in Northern Dalmatia"
+            },
+            "cards": [
+                {
+                    "image": "/img/grey.jpeg",
+                    "title": "Beginners course",
+                    "text": "If you are a beginner and want to get up on the board beginners course is the option for you."
+                },
+                {
+                    "image": "/img/grey.jpeg",
+                    "title": "Trial course",
+                    "text": "If you are a beginner and just want to learn flying the big depowerable kite, trial course is the option for you."
+                },
+                {
+                    "image": "/img/grey.jpeg",
+                    "title": "Improvers lessons",
+                    "text": "If you already have some kiting skills but want to improve, you can take improvers lessons. We can help you to make that leap to the next level."
+                }
+            ]
+        },
+        "gallery": {
+            "first": "Gallery",
+            "second": "Our Photos & Videos",
+            "third": "Passion and obsession to freedom of movement."
+        },
+        "pricing": {
+            "first": "Pricing",
+            "second": "Kite School Programs",
+            "third": "Visit the beach and experience kitesurfing"
+        }
+    },
+    "about": {
+        "team": [
+            { "name": "Grey", "role": "Kite Teacher", "image": "/img/grey.jpeg" },
+            { "name": "Grey G. Grey", "role": "Kite Assistent", "image": "/img/grey.jpeg" },
+            { "name": "Grey", "role": "Kite Teacher", "image": "/img/grey.jpeg" }
+        ]
+    },
+    "pricing": [
+        {
+            "id": 1,
+            "price": 270,
+            "description": [
+                "6 hour Beginners course",
+                "Equipment",
+                "Kite control",
+                "Safety systems",
+                "Kite Launch and landing"
+            ]
+        },
+        {
+            "id": 2,
+            "price": 490,
+            "description": [
+                "12 hour Beginners course",
+                "Equipment",
+                "Kite control",
+                "Safety systems",
+                "Kite Launch and landing"
+            ]
+        },
+        {
+            "id": 3,
+            "price": 90,
+            "description": [
+                "2 hour Trial course",
+                "Kite control",
+                "Body drag with board",
+                "Body rotation control",
+                "Steady Pull"
+            ]
+        },
+        {
+            "id": 4,
+            "price": 150,
+            "description": [
+                "3 hour Improvers package",
+                "Equipment",
+                "Various turns",
+                "Riding toeside",
+                "Jumping or spinning"
+            ]
+        },
+        {
+            "id": 5,
+            "price": 55,
+            "description": [
+                "Single hour",
+                "Equipment",
+                "Various turns",
+                "Riding toeside",
+                "Jumping or spinning"
+            ]
+        }
+    ],
+    "services": [
+        { 
+            "id": 1,
+            "name": "Beginner",
+            "image": "/img/service.jpg",
+            "text": "If you are a beginner and want to get up on the board beginners course is the option for you.",
+            "description": [
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Trial",
+            "image": "/img/service.jpg",
+            "text": "If you are a beginner and just want to learn flying the big depowerable kite, trial course is the option for you.",
+            "description": [
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Improvment",
+            "image": "/img/service.jpg",
+            "text": "If you already have some kiting skills but want to improve, you can take improvers lessons. We can help you to make that leap to the next level.",
+            "description": [
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?"
+            ]
+        }
+    ],
+    "faq": [
+        { "id": 1, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
+        { "id": 2, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
+        { "id": 3, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
+        { "id": 4, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
+        { "id": 5, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
+        { "id": 6, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
+        { "id": 7, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
+        { "id": 8, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."}
+    ],
+    "lessonButton": "book a lesson",
+    "learnMore": "learn more"
 }

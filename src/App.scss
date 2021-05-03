@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200;300;400;600&family=Poppins:wght@200;300;400;600&display=swap');
+@import './assets/scss/colors';
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -7,10 +12,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+::selection {
+  color: #fff;
+  background-color: $primaryColor;
+}
+
+:focus {
+  outline: none;
 }
 
 code {
@@ -24,10 +39,10 @@ code {
 
 .text {
   font-family: 'Poppins', sans-serif;
-  color: #0d425e;
+  color:$darkBlue;
 }
 
 .title {
   font-family: 'Fira Sans Condensed', sans-serif;
-  color: #0d425e;
+  color:$darkBlue;
 }

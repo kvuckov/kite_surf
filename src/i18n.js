@@ -11,8 +11,11 @@ i18n
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
+        preload: ['en-US'],
         fallbackLng: "en-US",
         debug: true,
+        saveMissing: true,
+        saveMissingTo: 'all',
 
         interpolation: {
             escapeValue: false

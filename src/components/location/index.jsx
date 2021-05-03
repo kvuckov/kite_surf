@@ -1,31 +1,27 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { useTranslation } from "react-i18next";
+import Zadar from '../../assets/img/zadarPoint.png';
 import styles from './styles.module.scss';
 
-import Heading from '../UI/heading';
-import Button from '../UI/button';
+const Heading = React.lazy(() => import('../UI/heading'));
 
-import Zadar from '../../assets/img/zadarPoint.png';
+const Location = () => {
+    const { t } = useTranslation();
+    const data = t("home.location", { returnObjects: true });
 
-const content = {
-    first: "Location",
-    second: "Great spots",
-    third: "We want our clients to feel awesome and unique."
-}
-
-const Location = props => {
     return (
         <div className={styles.location} >
             <div className={styles.location_left}>
-                <img src={Zadar} />
+                <LazyLoadImage src={Zadar} />
             </div>
             <div className={styles.location_right}>
-                <Heading content={content} left={true} />
-                <div className={[styles.locations, "text"].join(' ')}>
-                    <span>Zadar</span>
-                    <span>Pula</span>
-                    <span>Split</span>
-                </div>
-                <Button text={"Learn more"} medium={true} type={'tertionary'} />
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Heading content={data.title} left={true} />
+                    <div className={[styles.locations, "text"].join(' ')}>
+                        {data.description}
+                    </div>
+                </Suspense>
             </div>
         </div>
     );

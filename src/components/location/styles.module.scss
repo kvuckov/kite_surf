@@ -1,3 +1,5 @@
+@import '../../assets/scss/mixins';
+
 .location {
     display: flex;
     justify-content: space-evenly;
@@ -5,13 +7,11 @@
     position: relative;
     overflow: hidden;
     background-color: transparent;
-    padding: 12rem 10%;
+    @include container;
     
     @media (max-width: 767px) {
         background-position: left;
         flex-direction: column-reverse;
-        padding: 15vw 5vw;
-        margin-bottom: 15vw;
     }
 
     &_left {
@@ -39,27 +39,12 @@
         }
 
         .locations {
-            display: flex;
-            flex-direction: column;
-            line-height: 2;
-            font-weight: 500;
-            font-size: 18px;
             padding: 1rem 0 0;
+            font-weight: 300;
         }
 
         p:last-child {
             margin: 0;
-        }
-
-        div {
-            margin-left: 0;
-        }
-
-        div:last-child {
-            @media (max-width: 767px) {
-                position: absolute;
-                bottom: 0;
-            }
         }
     }
 }

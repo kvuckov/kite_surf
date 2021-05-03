@@ -1,3 +1,5 @@
+@import '../../assets/scss/colors';
+
 .banner {
     display: flex;
     width: 100%;
@@ -32,7 +34,7 @@
     flex-direction: column;
     text-transform: uppercase;
     align-items: center;
-    color: #0d425e;
+    color: $darkBlue;
     
     @media (min-width: 992px) {
         align-items: unset;
@@ -60,7 +62,6 @@
         font-size: 60px;
         font-weight: bold;
         margin-top: 0;
-        // margin-top: 20px;
         padding: 0;
         white-space: normal;
         line-height: 0.9;
@@ -84,7 +85,7 @@
     }
 
     &_third {
-        color: #11587d;
+        color: $middleDarkBlue;
         font-family: "Poppins", sans-serif;
         letter-spacing: normal;
         margin-top: 10px;

@@ -1,0 +1,16 @@
+.accordion {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 991px) {
+        flex-direction: column;
+    }
+
+    > div {
+        width: 49%;
+
+        @media (max-width: 991px) {
+            width: 100%;
+        }
+    }
+}

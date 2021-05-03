@@ -1,6 +1,8 @@
+@import '../../../assets/scss/colors';
+
 .roundButton {
     box-sizing: border-box;
-    background-color: #eef3f5;
+    background-color: $grey;
     border-radius: 30px;
     color: #062637;
     display: inline-block;
@@ -14,6 +16,7 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
+    text-transform: capitalize;
     cursor: pointer;
 
     &:hover {
@@ -26,7 +29,7 @@
 
     &:before {
         content: '';
-        background-color: #2394fd;
+        background-color: $blueButton;
         border-radius: 50%;
         background-image: url('../../../assets/svg/play.svg');
         background-repeat: no-repeat;
@@ -40,7 +43,7 @@
     }
 
     &:after {
-        background-color: #2394fd;
+        background-color: $blueButton;
         border-radius: 35px;
         content: "";
         height: 100%;
