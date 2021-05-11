@@ -16,13 +16,13 @@ const Contact = React.lazy(() => import('./pages/contact'));
 const Faq = React.lazy(() => import('./pages/faq'));
 
 const App = () => {
-	const [scrolled, setScrolled] = React.useState(false);
+	const [scrolled, setScrolled] = React.useState(true);
 
-	React.useEffect(() => {
-		window.addEventListener('scroll', () => {
-			window.pageYOffset > 10 ? setScrolled(true) : setScrolled(false);
-		})
-	});
+	// React.useEffect(() => {
+	// 	window.addEventListener('scroll', () => {
+	// 		window.pageYOffset > 10 ? setScrolled(true) : setScrolled(false);
+	// 	})
+	// });
 
 	return (
 		<>

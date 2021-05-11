@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
     left: 0;
     position: fixed;
     right: 0;
@@ -40,6 +39,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        height: 70px;
         
         @media (min-width: 992px) {
             width: 5%;
@@ -47,8 +47,8 @@
     }
     
     &_logo {
-        width: 65px;
-        height: 65px;
+        width: 45px;
+        height: 45px;
     }
 
     ul {
@@ -193,7 +193,7 @@
 }
 
 .header.open {
-    height: 100vh;
+    height: 100%;
     padding: 0;
     flex-direction: column;
     background-color: white;
@@ -272,14 +272,14 @@
         height: auto;
         border-top: 4px solid $darkBlue;
         position: absolute;
-        bottom: 10px;
+        bottom: 0;
 
         > li, span {
             height: auto;
         }
 
         span {
-            padding: 2rem 0;
+            padding: 1.5rem 0;
         }
 
         ul {
