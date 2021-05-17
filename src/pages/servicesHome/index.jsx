@@ -15,7 +15,7 @@ const ServicesHome = props => {
 
     const renderServices = () => Array.isArray(services) && services.map((service, index) => {
         return (
-            <div className={styles.servicesHome_item} onClick={() => props.history.push({ pathname: routes.SERVICES, state: { index: index }})}>
+            <div key={index} className={styles.servicesHome_item} onClick={() => props.history.push({ pathname: routes.SERVICES, state: { index: index }})}>
                 <LazyLoadImage src={service.image} />
                 <div>
                     <h2>{service.name}</h2>

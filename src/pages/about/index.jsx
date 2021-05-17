@@ -97,8 +97,8 @@ const About = props => {
         </div>
     );
 
-    const renderTeam = () => Array.isArray(team) && team.map(member =>
-        <div className={style.about_team_member}>
+    const renderTeam = () => Array.isArray(team) && team.map((member, index) =>
+        <div key={index} className={style.about_team_member}>
             <img src={member.image}/>
             <h5>{member.name}</h5>
             <p>{member.role}</p>

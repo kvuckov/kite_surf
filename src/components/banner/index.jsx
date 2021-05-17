@@ -1,11 +1,11 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { withRouter } from 'react-router';
 import { useTranslation } from "react-i18next";
 
 import * as routes from '../../constants/routes';
 
 import styles from './styles.module.scss';
-const Button = React.lazy(() => import('../UI/button'));
+import Button from '../UI/button';
 
 const Banner = props => {
     const { t } = useTranslation();
@@ -17,9 +17,8 @@ const Banner = props => {
                 <span className={styles.title_first}>{translation[0]}</span>
                 <h2 className={styles.title_second}>{translation[1]}</h2>
                 <span className={styles.title_third}>{translation[2]}</span>
-                <Suspense fallback={<div>Loading...</div>}>
-                    <Button onClick={() => props.history.push(routes.PRICING)} text={t("lessonButton")} medium={true} type={'primary'} />
-                </Suspense>
+                <Button onClick={() => props.history.push(routes.PRICING)} text={t("lessonButton")} medium={true} type={'primary'} />
+
             </div>
         </div>
     );

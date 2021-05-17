@@ -6,8 +6,8 @@ const BorderText = props => {
 
     return (
         <div className={styles.borderText}>
-            <p className={'text'}>{props.content.first}</p>
-            <p className={'text'}>{props.content.second}</p>
+            <p className={'text'}>{props.content && props.content.first}</p>
+            <p className={'text'}>{props.content && props.content.second}</p>
         </div>
     );
 };

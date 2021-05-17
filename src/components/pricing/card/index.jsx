@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 
 import Button from '../../UI/button';
 
-import Temp from '../../../assets/img/banner.jpg'
+import Temp from '../../../assets/img/banner.jpg';
 
 const PricingCard = props => {
     const { t } = useTranslation();
