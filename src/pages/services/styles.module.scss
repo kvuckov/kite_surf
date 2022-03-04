@@ -75,10 +75,14 @@
                     align-items: center;
                 }
                 
+                h4 {
+                    margin: 0;
+                }
                 
                 p {
                     color: $lightBlue;
                     margin-top: 0;
+                    align-self: flex-start;
                 }
             }
         }

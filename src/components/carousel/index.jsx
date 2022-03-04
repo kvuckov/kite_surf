@@ -65,6 +65,14 @@ const Carousel = props => {
         .slick-slide div {
             display: flex;
             justify-content: center;
+            height: 100%;
+            overflow: hidden;
+        }
+        .slick-slide {
+            height: inherit;
+        }
+        .slick-track {
+            display: flex;
         }
     `;
 

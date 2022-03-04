@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-
+    position: relative;
 
     &_first {
         line-height: .8;
@@ -13,6 +13,7 @@
         font-weight: 300;
         margin: 0;
         margin-bottom: .25rem;
+        font-size: 18px;
 
         &:before {
             background-color: $darkBlue;

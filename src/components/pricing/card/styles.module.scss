@@ -4,87 +4,82 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between !important;
     width: 92%;
     margin: 0 auto;
-
-    &_content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 50px 40px;
-        width: 100%;
-        box-sizing: border-box;
-        background-color: $grey;
-        z-index: 0;
-
-        @media (max-width: 767px) {
-            padding: 5px 15px 20px;
-        }
-
-        
-        ul {
-            margin-bottom: 30px;
-            padding: 0;
-            list-style: none;
-            overflow: hidden;
-            color: $lightBlue;
-            font-weight: 300;
-            line-height: 1.5;
-            width: 100%;
-            text-align: center;
-
-            li {
-                padding-top: 10px;
-                padding-bottom: 10px;
-
-                &:not(:last-child) {
-                    border-bottom: 1px solid $darkGrey;
-                }
-            }
-        }
+    padding: 50px 40px 35px;
+    box-sizing: border-box;
+    background-color: $grey;
+    z-index: 0;
+    position: relative;
+    
+    @media (max-width: 767px) {
+        padding: 25px 15px 20px;
     }
 
-    &_heading {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
+    hr {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 4px;
+        margin: 0;
+        border: none;
+    }
 
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: $primaryColor;
-            opacity: 0.65;
-        }
-
-        img {
-            width: 100%;
-        }
-
-        .priceWrap {
-            position: absolute;
-            color: $darkBlue;
-            display: block !important;
+    h2 {
+        margin: 0;
+    }
     
-            &_sign {
-                font-size: 50px;
-                position: relative;
-                top: -45px;
-            }
-            &_price {
-                font-size: 100px;
-                font-weight: 900;
+    ul {
+        margin-bottom: 15px;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        color: $lightBlue;
+        font-weight: 300;
+        line-height: 1.5;
+        width: 100%;
+        text-align: center;
+
+        li {
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $darkGrey;
             }
         }
     }
 
     &_button {
         margin: 0;
+        border-color: $darkBlue;
+        color: white;
+        height: auto !important;
+
+        &:hover {
+            color: $darkBlue;
+            font-weight: 600;
+        }
+
+        &::before {
+            background-color: $darkBlue;
+        }
+    }
+}
+
+.priceWrap {
+    margin-bottom: 10px;
+    height: auto !important;
+    overflow: visible !important;
+
+    &_sign {
+        font-size: 20px;
+        transform: translate(-5px,8px);
+    }
+
+    &_price {
+        font-size: 50px;
+        font-weight: 400;
     }
 }

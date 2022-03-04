@@ -87,8 +87,9 @@
             }
 
             img {
-                width: 100%;
+                width: auto;
                 z-index: 5;
+                height: 400px;
 
                 &.hovered {
                     opacity: 0.6;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
 import weather from '../../assets/img/weather.png';
 import wave from '../../assets/img/wave.png';
 import board from '../../assets/img/boardIco.png';
@@ -14,21 +15,23 @@ const content = {
 }
 
 const Advantages = () => {
+    const { t } = useTranslation();
+    const advantages = t("about.advantages", { returnObjects: true });
     return (
         <div className={style.advantages}>
-            <Heading content={content} theme={'tertionary_opposite'}/>
+            <Heading content={advantages.title} theme={'tertionary_opposite'}/>
             <div className={style.icon_boxes}>
                 <div className={style.icon_boxes_box}>
                     <img src={weather} />
-                    <p>Safest spot home to flat and shallow</p>
+                    <p>{advantages.weather}</p>
                 </div>
                 <div className={style.icon_boxes_box}>
                     <img src={wave} />
-                    <p>Safest spot home to flat and shallow</p>
+                    <p>{advantages.wave}</p>
                 </div>
                 <div className={style.icon_boxes_box}>
                     <img src={board} />
-                    <p>Safest spot home to flat and shallow</p>
+                    <p>{advantages.board}</p>
                 </div>
             </div>
         </div>

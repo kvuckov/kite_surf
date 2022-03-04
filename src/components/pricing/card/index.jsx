@@ -4,8 +4,6 @@ import styles from './styles.module.scss';
 
 import Button from '../../UI/button';
 
-import Temp from '../../../assets/img/banner.jpg';
-
 const PricingCard = props => {
     const { t } = useTranslation();
 
@@ -14,20 +12,17 @@ const PricingCard = props => {
     });
 
     return (
-        <div className={styles.pricingCard} >
-            <div className={styles.pricingCard_heading}>
-                <img src={Temp} />
-                <div className={styles.priceWrap}>
-                    <span className={styles.priceWrap_sign}>€</span>
-                    <span className={styles.priceWrap_price}>{props.data.price}</span>
-                </div>
+        <div className={[styles.pricingCard, styles[props.data.title]].join(' ')} >
+            <h2>{props.data.title}</h2>
+            <hr style={{ backgroundColor: props.data.color }} />
+            <ul>
+                { renderDescription() }
+            </ul>
+            <div className={styles.priceWrap}>
+                <span className={styles.priceWrap_sign}>€</span>
+                <span className={styles.priceWrap_price}>{props.data.price}</span>
             </div>
-            <div className={styles.pricingCard_content}>
-                <ul>
-                    { renderDescription() }
-                </ul>
-                <Button text={t("lessonButton")} medium={true} type={'secondary'} onClick={props.onClick} className={styles.pricingCard_button}/>
-            </div>
+            <Button text={t("lessonButton")} medium={true} type={'secondary'} onClick={props.onClick} className={styles.pricingCard_button}/>
         </div>
     );
 };

@@ -27,6 +27,12 @@
     @media (max-width: 1199px){
         min-height: 600px;
     }
+
+    img {
+        position: absolute;
+        z-index: 1000;
+        width: 50%;
+    }
 }
 
 .title {
@@ -47,6 +53,7 @@
         margin: 0;
         text-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
         padding-left: 0;
+        position: relative;
 
         @media (min-width: 992px) {
             font-size: 30px;
@@ -68,6 +75,7 @@
         margin-bottom: 0;
         text-align: center;
         text-shadow: 0 0 13px rgba(0, 0, 0, 0.1);
+        position: relative;
 
         @media (min-width: 768px) {
             font-size: 100px;
@@ -88,14 +96,13 @@
         color: $middleDarkBlue;
         font-family: "Poppins", sans-serif;
         letter-spacing: normal;
-        margin-top: 10px;
         text-align: right;
-        text-shadow: none;
         font-size: 20px;
         font-weight: 700;
         letter-spacing: 1em;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
         margin-right: 0;
+        position: relative;
 
         @media (min-width: 992px) {
             font-size: 24px;

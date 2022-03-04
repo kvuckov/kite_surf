@@ -3,8 +3,6 @@ import { withRouter } from 'react-router';
 import { useTranslation } from "react-i18next";
 
 import * as routes from '../../constants/routes';
-
-import BannerImage from '../../assets/img/banner.jpg';
 import styles from './styles.module.scss';
 
 import Banner from '../../components/banner';
@@ -20,20 +18,21 @@ const Home = props => {
     const { t } = useTranslation();
     const services = t("home.services", { returnObjects: true });
     const [showModal, setShowModal] = React.useState(false);
+    const [ data, setData ] = React.useState()
 
     const renderCards = () => Array.isArray(services.cards) && services.cards.map((service, index) => {
-        return <Card key={index} data={service} onClick={() => props.history.push({ pathname: routes.SERVICES, state: { index: index }})} />;
+        return <Card key={index} data={service} onClick={() => props.history.push({ pathname: routes.SERVICES, state: { index: index + 1 }})} />;
     });
 
     const handleClick = data => {
+        setData(data);
         setShowModal(true);
-        console.log('data', data);
     };
 
     return (
         <div className={styles.homepage}>
-            {showModal && <Modal onClick={() => setShowModal(false)} />}
-            <Banner src={BannerImage} />
+            {showModal && <Modal onClick={() => setShowModal(false)} data={data}/>}
+            <Banner firstBreakpoint={1450} secondBreakpoint={1000}/>
             <About />
             <Location />
             <div className={styles.services}>

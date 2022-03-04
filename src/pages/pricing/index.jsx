@@ -9,15 +9,16 @@ import Modal from '../../components/modals/sendEmail';
 
 const Pricing = () => {
     const [showModal, setShowModal] = React.useState(false);
+    const [ data, setData ] = React.useState()
 
     const handleClick = data => {
+        setData(data);
         setShowModal(true);
-        console.log('data', data);
     };
 
     return (
         <div className={styles.pricing}>
-            {showModal && <Modal onClick={() => setShowModal(false)} />}
+            {showModal && <Modal onClick={() => setShowModal(false)} data={data} />}
             <Banner src={BannerImage} title='Pricing' />
             <PricingCards onClick={data => handleClick(data)} />
         </div>

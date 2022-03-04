@@ -30,8 +30,8 @@ const Accordion = () => {
 
     return (
         <div className={styles.accordion} >
-            <div>{renderAccordion(0,4)}</div>
-            <div>{renderAccordion(4,8)}</div>
+            <div>{renderAccordion(0,5)}</div>
+            <div>{renderAccordion(5,10)}</div>
         </div>
     );
 };

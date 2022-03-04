@@ -1,193 +1,258 @@
 {
     "navigation": [
-        { "id": 1, "name": "Home" , "link": "/" },
-        { "id": 2, "name": "About" , "link": "/about" },
+        { "id": 1, "name": "Početna" , "link": "/" },
+        { "id": 2, "name": "O nama" , "link": "/about" },
         {
             "id": 3,
-            "name": "Services" ,
+            "name": "Usluge" ,
             "link": "/services",
             "subLink": "/services_details",
             "subLinks": [
-                "Beginners course",
-                "Triel course",
-                "Improvement"
+                "Početnički tečaj",
+                "Probni tečaj",
+                "Napredni tečaj"
             ]
         },
-        { "id": 4, "name": "Pricing" , "link": "/pricing" },
-        { "id": 5, "name": "Contact" , "link": "/contact" }
+        { "id": 4, "name": "Cijene" , "link": "/pricing" },
+        { "id": 5, "name": "Kontakt" , "link": "/contact" },
+        { "id": 6, "name": "FAQ" , "link": "/faq" }
     ],
     "home": {
         "banner": [
-            "wind, water, lifestyle",
-            "kite school",
-            "zadar"
+            "Maestral",
+            "kitesurf club",
+            "privlaka"
         ],
         "about": {
             "title": {
-                "first": "About Us",
-                "second": "Our Little History",
-                "third": "Passion and obsession to freedom of movement."
+                "first": "O nama",
+                "second": "Kako je sve počelo",
+                "third": "Strast i opsesija slobode kretanja."
             },
             "description": {
-                "first": "We have been teaching kitesurfing in many different environments and situations. Whether it is flat or choppy, deep or shallow, high or low wind, we know what to do to make your kiting experience more productive and more fun.",
-                "second": "Safety is something you definitely have to take seriously. Fortunately, kites have come a long way regarding safety since the early days. The invention and refinment of depower and safety systems has made this beautiful sport accessible to wide audience."
+                "first": "Osjećaj slobode kretanja te povezanost s okolinom naša najveća strast. Tijekom godina stekli smo  bogato iskustvo podučavanja u svim uvjetima. Bez obzira da li je vjetar jak ili slab, da li je more plitko ili duboko, da li je površina ravna ili valovita, mi ćemo znati što učiniti kako bi vam proces učenja učinili lakšim i ugodnijim.",
+                "second": "Sigurnost se mora shvatiti ozbiljno. Srećom, zmajevi su danas puno sigurniji u odnosu na rane dane kajtanja. Izum i usavršavanje sigurnosnih sistema učinili su ovaj divan sport dostupnim širokoj publici."
             }
         },
         "location": {
             "title": {
-                "first": "Location",
-                "second": "Great spots",
-                "third": "Kitesurfing lessons on sand beaches in Northern Dalmatia"
+                "first": "Lokacija",
+                "second": "Privlaka",
+                "third": "Kitesurfing lekcije na pješčanim plažama Sjeverne Dalmacije"
             },
-            "description": "20 km north from the city of Zadar - more precisely in the vicinity of city of Nin. This is area with sand beaches and a lot of shallow waters. This is great for beginners and learning. The exact place depends on wind direction but all the beaches are nearby, we go to places where we can get the best wind."
+            "description": "Poduku kitesurfinga organiziramo 20-ak kilometara sjeverno od Zadra, u općini Privlaka. Ovo je područje s kilometrima pješčanih plaža i plićaka - idealno okruženje za učenje kitesurfinga. Radimo u plitkom i nije potrebno plivati što značajno olakšava proces učenja. Također, mjesto je otvoreno prema različitim smjerovima vjetra."
         },
         "services": {
             "title": {
-                "first": "Services",
-                "second": "Let’s Start An Education!",
-                "third": "Kitesurfing lessons on sand beaches in Northern Dalmatia"
+                "first": "Usluge",
+                "second": "Započni kitesurfing tečaj",
+                "third": "Kitesurfing lekcije na pješčanim plažama Sjeverne Dalmacije"
             },
             "cards": [
                 {
-                    "image": "/img/grey.jpeg",
-                    "title": "Beginners course",
-                    "text": "If you are a beginner and want to get up on the board beginners course is the option for you."
+                    "image": "/img/kitesurf-maestral-3.jpg",
+                    "title": "Početnički tečaj",
+                    "text": "Ako ste početnik i želite naučiti glisirati na dasci ovo je opcija za vas."
                 },
                 {
-                    "image": "/img/grey.jpeg",
-                    "title": "Trial course",
-                    "text": "If you are a beginner and just want to learn flying the big depowerable kite, trial course is the option for you."
+                    "image": "/img/kitesurf-maestral-4.jpg",
+                    "title": "Probni tečaj",
+                    "text": "Ako ste početnik i samo želite naučiti upravljati velikim zmajem bez vožnje na dasci, ovo je opcija za vas."
                 },
                 {
-                    "image": "/img/grey.jpeg",
-                    "title": "Improvers lessons",
-                    "text": "If you already have some kiting skills but want to improve, you can take improvers lessons. We can help you to make that leap to the next level."
+                    "image": "/img/kitesurf-maestral-6.jpg",
+                    "title": "Napredni tečaj",
+                    "text": "Ovo je opcija za one koji još ne glisiraju na dasci, ali i one koji to već rade ali žele nadograditi vještinu."
                 }
             ]
         },
         "gallery": {
-            "first": "Gallery",
+            "first": "Galerija",
             "second": "Our Photos & Videos",
-            "third": "Passion and obsession to freedom of movement."
+            "third": "Strast i opsesija slobode kretanja."
         },
         "pricing": {
-            "first": "Pricing",
-            "second": "Kite School Programs",
-            "third": "Visit the beach and experience kitesurfing"
+            "first": "Cijene",
+            "second": "Programi Kitesurfing škole",
+            "third": "Posjetite nas i iskusite kitesurfing"
         }
     },
     "about": {
+        "title": "O nama",
+        "advantages": {
+            "title": {
+                "first": "Prednosti",
+                "second": "Zašto učiti Kitesurfing s nama?",
+                "third": "Želimo da se naši klijenti osjećaju sretno i zadovoljno"
+            },
+            "weather": "Najbolji uvjeti za učenje kitesurfing-a",
+            "wave": "Najsigurnije mjesto za učenje kitesurfing-a, mirno i plitko",
+            "board": "Oprema koja tebi odgovara najviše"
+
+        },
+        "teamTitle": {
+            "first": "Tim",
+            "second": "Tim energičnih stručnjaka",
+            "third": "Želimo da se naši klijenti osjećaju sretno i zadovoljno"
+        },
+        "servicesTitle": {
+            "first": "Usluge",
+            "second": "Započni kitesurfing tečaj",
+            "third": "Kitesurfing lekcije na pješčanim plažama Sjeverne Dalmacije"
+        },
+        "galleryTitle": {
+            "first": "Galerija",
+            "second": "Our Photos & Videos",
+            "third": "Strast i opsesija slobode kretanja."
+        },
         "team": [
-            { "name": "Grey", "role": "Kite Teacher", "image": "/img/grey.jpeg" },
-            { "name": "Grey G. Grey", "role": "Kite Assistent", "image": "/img/grey.jpeg" },
-            { "name": "Grey", "role": "Kite Teacher", "image": "/img/grey.jpeg" }
+            { "name": "Šime Vukman", "role": "Kite Instructor", "image": "/img/grey.jpeg" },
+            { "name": "Krešo", "role": "Kite Instructor", "image": "/img/grey.jpeg" },
+            { "name": "Grey G. Grey", "role": "Kite Assistent", "image": "/img/teacherGrey.jpg" }
         ]
     },
-    "pricing": [
-        {
-            "id": 1,
-            "price": 270,
-            "description": [
-                "6 hour Beginners course",
-                "Equipment",
-                "Kite control",
-                "Safety systems",
-                "Kite Launch and landing"
-            ]
-        },
-        {
-            "id": 2,
-            "price": 490,
-            "description": [
-                "12 hour Beginners course",
-                "Equipment",
-                "Kite control",
-                "Safety systems",
-                "Kite Launch and landing"
-            ]
-        },
-        {
-            "id": 3,
-            "price": 90,
-            "description": [
-                "2 hour Trial course",
-                "Kite control",
-                "Body drag with board",
-                "Body rotation control",
-                "Steady Pull"
-            ]
-        },
-        {
-            "id": 4,
-            "price": 150,
-            "description": [
-                "3 hour Improvers package",
-                "Equipment",
-                "Various turns",
-                "Riding toeside",
-                "Jumping or spinning"
-            ]
-        },
-        {
-            "id": 5,
-            "price": 55,
-            "description": [
-                "Single hour",
-                "Equipment",
-                "Various turns",
-                "Riding toeside",
-                "Jumping or spinning"
-            ]
-        }
-    ],
-    "services": [
-        { 
-            "id": 1,
-            "name": "Beginner course",
-            "image": "/img/service.jpg",
-            "text": "If you are a beginner and want to get up on the board beginners course is the option for you.",
-            "description": [
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?"
-            ]
-        },
-        {
-            "id": 2,
-            "name": "Trial course",
-            "image": "/img/service.jpg",
-            "text": "If you are a beginner and just want to learn flying the big depowerable kite, trial course is the option for you.",
-            "description": [
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?"
-            ]
-        },
-        {
-            "id": 3,
-            "name": "Improvment",
-            "image": "/img/service.jpg",
-            "text": "If you already have some kiting skills but want to improve, you can take improvers lessons. We can help you to make that leap to the next level.",
-            "description": [
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?"
-            ]
-        }
-    ],
+    "pricing": {
+        "title": "Cijene",
+        "content": [
+            {
+                "id": 1,
+                "price": 270,
+                "title": "Početnički tečaj",
+                "color": "rgb(0,255,106)",
+                "description": [
+                    "6 sati",
+                    "Oprema",
+                    "Kite kontrola",
+                    "Sigurnosni sustavi",
+                    "Lansiranje i slijetanje Kite-a"
+                ]
+            },
+            {
+                "id": 2,
+                "price": 490,
+                "title": "Početnički tečaj",
+                "color": "rgb(0,255,106)",
+                "description": [
+                    "12 sati",
+                    "Oprema",
+                    "Kite kontrola",
+                    "Sigurnosni sustavi",
+                    "Lansiranje i slijetanje Kite-a"
+                ]
+            },
+            {
+                "id": 3,
+                "price": 90,
+                "title": "Probni tečaj",
+                "color": "#647EF9",
+                "description": [
+                    "2 sata",
+                    "Kite kontrola",
+                    "Body drag",
+                    "Kontrola rotacije tijela",
+                    "Steady Pull"
+                ]
+            },
+            {
+                "id": 4,
+                "price": 150,
+                "title": "Napredni tečaj",
+                "color": "#FBB13D",
+                "description": [
+                    "3 sata",
+                    "Oprema",
+                    "Razni okreti",
+                    "Vožnja 'toeside'",
+                    "Skokovi i okreti"
+                ]
+            },
+            {
+                "id": 5,
+                "price": 55,
+                "title": "Single hour",
+                "color": "#ED0C09",
+                "description": [
+                    "Oprema",
+                    "Razni okreti",
+                    "Vožnja 'toeside'",
+                    "Skokovi i okreti"
+                ]
+            }
+        ]
+    },
+    "services": {
+        "title": "Usluge",
+        "content": [
+            { 
+                "id": 1,
+                "name": "Početnički tečaj",
+                "image": "/img/kitesurf-maestral-3.jpg",
+                "text": "Ako ste početnik i želite naučiti glisirati na dasci ovo je opcija za vas.",
+                "description": [
+                    "Kako bi završili početnički tečaj potrebna su minimalno dva, najčešće tri dana. Okvirno ga možemo podijeliti u tri dijela.",
+                    "<h4>Savladavanje osnova</h4>",
+                    "Teorija uključuje teren i vjetrove, zmajeve i ostalu opremu, sigurnosna pravila i pravila prednosti. Praktični dio uključuje upravljanje s dvolinijskim trainer zmajem. Naučit ćete osnove upravljanja zmajem i kako koristiti prozor vjetra i power zone kako bi kontrolirali količinu vuče zmaja.",
+                    "<h4>Veliki kite</h4>",
+                    "Vrijeme je za lansiranje velikog zmaja sa četiri (ili pet) linija. Prije ulaska u plićak sa zmajem naučiti ćete kako pripremiti zmaja na plaži i kako koristiti njegove sigurnosne sisteme. Prilikom upravljanja zmajem naučiti ćete stvari kao što su lansiranje s vode, ispravno korištenje kontrolne palice za upravljanje, 'bacanje' zmaja u power zonu, tehnike upravljanja na slabom i jakom vjetru, upravljanje s jednom rukom, itd.",
+                    "<h4>Dizanje na dasku</h4>",
+                    "Kad savladate drugi korak i uspješno kontrolirate velikog zmaja, spremni ste za dizanje na dasku. Trebate zauzeti poziciju za vodeni start, 'baciti' zmaja u power zonu, podesiti položaj nogu i tijela kad vas zmaj povuče i podići se na dasku. Zvuči teško? Bez brige, mi smo tu da vam pomognemo.",
+                    "Svaki korak je individualan i sve ovisi o vama, vašoj koncentraciji, volji i želji. Postoji mogućnost potrebe za manje ili više sati do postizanja željenoga cilja."
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Probni tečaj",
+                "image": "/img/kitesurf-maestral-4.jpg",
+                "text": "Ako ste početnik i samo želite naučiti upravljati velikim zmajem bez vožnje na dasci, ovo je opcija za vas.",
+                "description": [
+                    "Ako ste početnik i samo želite naučiti upravljati velikim zmajem bez vožnje na dasci, ovo je opcija za vas. Ako ste zainteresirani za kitesurfing ali niste sigurni da će to biti prava stvar za vas, probni tečaj je najbolji način da to provjerite.",
+                    "Prvo ćete vježbati na malom trainer kiteu da naučite osnove. Nakon toga ulazite u vodu s velikim zmajem i na kraju radite body drag."
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Napredni tečaj",
+                "image": "/img/kitesurf-maestral-6.jpg",
+                "text": "Ovo je opcija za one koji još ne glisiraju na dasci, ali i one koji to već rade ali žele nadograditi vještinu.",
+                "description": [
+                    "Ako već imate iskustva s kajtovima, npr. prošle godine ste počeli učiti ali još niste zadovoljni s vještinom, možemo vam pomoći da napredujete.",
+                    "Ovo je opcija za one koji još ne glisiraju na dasci, ali i za one koji glisiraju ali žele usavršiti vještinu. Npr. možete raditi na vožnji u vjetar, različitim okretima, vožnji na prstima ili skokovima."
+                ]
+            }
+        ]
+    },
+    "contact": {
+        "title": "Kontakt",
+        "content": [
+            { "title": "Phone", "text": "+1 201 918 47 81</br>+1 201 890 81 40", "icon": "img/phone.png" },
+            { "title": "Adress", "text": "Virski put 23233</br>Privlaka, Zadar County", "icon": "img/location.png" },
+            { "title": "Email", "text": "<a href='mailto:info@maestral-kitesurfing.com'>info@maestral-kitesurfing.com</a>", "icon": "img/email.png" }
+        ]
+    },
     "faq": [
-        { "id": 1, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
-        { "id": 2, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
-        { "id": 3, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
-        { "id": 4, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
-        { "id": 5, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
-        { "id": 6, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
-        { "id": 7, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
-        { "id": 8, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."}
+        { "id": 1, "title": "Može li svatko kajtati?", "text": "Da, ako ste dovoljno željni i ustrajni učiti. Kao i skijanje, tehnika je puno važnija od snage."},
+        { "id": 2, "title": "Jeli kajtanje teško naučiti?", "text": "Ne. Otprilike 6 lekcija trebalo bi vas osposobiti za svladavanje osnovnih vještina, a za još 5 do 10 sati trebali biste krenuti uz vjetar. Ipak, može biti teško zakazati lekciju ako vjetar ne obećaje."},
+        { "id": 3, "title": "Hoću li kitesurfati nakon tečaja?", "text": "Svaki korak je individualan i sve ovisi o vama, vašoj koncentraciji, volji i želji. Postoji mogućnost potrebe za više ili manje sati za postizanje željenog cilja."},
+        { "id": 4, "title": "Zašto kitesurf?", "text": "Doživljavate slobodu surfanja bez potrebe da veslate ili čekate valove. Možete letjeti kao jedrilica bez tvrdog slijetanja. Dobivate brzinu wakeboardinga bez potrebe za čamcem. Možete putovati na velike udaljenosti samo pomoću vjetra. Možete doživjeti uzbuđenje rezbarenja i okretanja daske bez putovanja na snijeg."},
+        { "id": 5, "title": "Koja je razlika između kitesurfinga i kiteboardinga?", "text": "Stvarno nema razlike. Izrazi se koriste naizmjenično. Međutim, neki ljudi mogu smatrati kitesurfing kajtanjem u surfanju (wave riding)."},
+        { "id": 6, "title": "Možete li ići uz vjetar kada surfate?", "text": "Da. Odletite kajtom do prednjeg dijela vjetrobranskog prozora u svom smjeru putovanja (kao što je ubacivanje glavnog jedra), obrubite dasku kako biste stvorili 'kobilicu' i upravljate nogama kako biste stvorili 'kormilo'. Kitesurferi su zapravo klasificirani kao jedrilice."},
+        { "id": 7, "title": "Je li u redu koristiti leash dok učim?", "text": "Ne. Ako vas snažno povuče, daska će vas snažno udariti i lako vas može onesvijestiti ili ozlijediti. Naučite povući tijelo uz vjetar kako biste mogli vratiti svoju dasku ako je izgubite."},
+        { "id": 8, "title": "Koliko košta kupnja opreme?", "text": "Možete kupiti kompletan set rabljene opreme (daska, kajt + šipka, pojas), ovisno o stanju, bilo gdje od 600 A$ do 2000 A$. Rasponi cijena za novu opremu su: kajt: 900 A$ do 2000 A$, Daska: 750 A$ 1300 A$, Remena: 120 A$ 250 A$. Imajte na umu da ako kupujete rabljenog kajta, provjerite je li kajt koji kupujete mlađi od 4 godine. Svake godine dolazi do poboljšanja sigurnosti zmajeva – kupnjom relativno nedavnog kajta očuvat ćete se. Nikada nemojte biti u iskušenju kupiti jeftine stare kajteve ako ste početnik – s razlogom su jeftini i mogu biti opasni."},
+        { "id": 9, "title": "Mogu li ponovno pokrenuti kajt iz vode?", "text": "Da. Možete ga ponovno pokrenuti iz vode nakon pada. Stupanj sposobnosti ponovnog pokretanja može varirati ovisno o vrsti kajta koji koristite."},
+        { "id": 10, "title": "Treba li surferu pomoć da lansira ili spusti kajt?", "text": "Obično vam nije potrebna nikakva pomoć za lansiranje ili spuštanje vašeg kajta osim ako niste na prepunoj i prometnoj plaži ili obali koja nije kite-friendly (npr. oštre stijene). Različiti kajtevi imaju različite tehnike lansiranja, slijetanja i ponovnog lansiranja u vodu. Vaš bi vam prodavač trebao moći dati odgovarajuće upute."}
     ],
-    "lessonButton": "book a lesson",
-    "learnMore": "learn more"
+    "lessonButton": "Rezerviraj lekciju",
+    "learnMore": "pričitaj više",
+    "email": {
+        "title": "Ostavi poruku",
+        "submit": "Pošalji",
+        "requiredError" : "* Ovo polje je obavezno",
+        "nameError": "* Ime mora sadržavati barem dva slova",
+        "emailError": "* Email nije ispravan",
+        "thankYou": "<h2>Hvala!</h2></br>Vaša poruka je primljena i uskoro ćemo vas kontaktirati radi daljnjeg postupanja. Ako želite s nekim razgovarati odmah slobodno nazovite."
+    },
+    "footer": {
+        "title": "Pješčane plaže u Privlaci poznato su mjesto za kajtanje u laguni.",
+        "links": "Korisni Linkovi" 
+    }
 }
