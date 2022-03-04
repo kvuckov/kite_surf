@@ -1,32 +1,34 @@
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { useTranslation } from "react-i18next";
 import styles from './styles.module.scss';
-import logo from '../../assets/img/reful.png';
+import logo from '../../assets/img/maestral2.png';
 import facebook from '../../assets/svg/facebook.svg';
 import instagram from '../../assets/svg/instagram.svg';
 import gmail from '../../assets/svg/gmail.svg';
 
 const Footer = () => {
+    const { t } = useTranslation();
+    const footer = t("footer", { returnObjects: true });
     return (
         <div className={styles.footer} >
             <div className={styles.footer_content}>
                 <div className={styles.footer_content_left}>
-                    <LazyLoadImage src={logo} />
-                    <p>The estuary is the well-known kite spot in the lagoon. Two launches are possible.</p>
+                    <img src={logo} />
+                    <p>{footer.title}</p>
                     <div className={styles.social_links}>
                         <a href="https://www.facebook.com/" target="_blank">
-                            <LazyLoadImage src={facebook} alt="Reful facebook"/>
+                            <img src={facebook} alt="Reful facebook"/>
                         </a>
                         <a href="https://www.instagram.com/" target="_blank">
-                            <LazyLoadImage src={instagram} alt="Reful instagram"/>
+                            <img src={instagram} alt="Reful instagram"/>
                         </a>
                         <a href="mailto:kkvuckovic@gmail.com" target="_blank">
-                            <LazyLoadImage src={gmail} alt="Reful email" />
+                            <img src={gmail} alt="Reful email" />
                         </a>
                     </div>
                 </div>
                 <div className={styles.footer_content_right}>
-                    <h3>Userful Link</h3>
+                    <h3>{footer.links}</h3>
                     <ul>
                         <li><a target="_blank" href="https://www.snow-forecast.com/resorts/Sljeme/6day/top">Snow-Forecast</a></li>
                         <li><a target="_blank" href="http://wxcharts.eu/?panel=default&model=gfs,gfs,gfs,gfs&region=italy&chart=overview,850temp,wind10mkph,snowdepth&run=06&step=012&plottype=10&lat=51.500&lon=-0.250&skewtstep=0">Wxcharts.eu</a></li>
@@ -39,7 +41,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className={styles.copyright}>Copyright © 2021 Reful All Rights Reserved.</div>
+            <div className={styles.copyright}>Copyright © 2022 Kitesurfing club Maestral. All Rights Reserved.</div>
         </div>
     );
 };

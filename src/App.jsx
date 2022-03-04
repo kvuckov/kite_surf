@@ -6,7 +6,6 @@ import './App.scss';
 
 import Header from './components/header';
 import Footer from './components/footer';
-import ScrollToTop from './components/UI/scrollToTopButton';
 import Home from './pages/home';
 import About from './pages/about';
 import Services from './pages/services';
@@ -16,17 +15,9 @@ import Contact from './pages/contact';
 import Faq from './pages/faq';
 
 const App = () => {
-	const [scrolled, setScrolled] = React.useState(false);
-
-	React.useEffect(() => {
-		window.addEventListener('scroll', () => {
-			window.pageYOffset > 10 ? setScrolled(true) : setScrolled(false);
-		})
-	});
-
 	return (
-		<>
-			<Header scrolled={scrolled} />
+		<div>
+			<Header  />
 			<Switch>
 				<Route path={routes.ROOT} exact component={Home} />
 				<Route path={routes.HOME} exact component={Home} />
@@ -39,8 +30,7 @@ const App = () => {
 				<Route render={() => (<Redirect to={routes.ROOT} />)} />
 			</Switch>
 			<Footer />
-			{scrolled && <ScrollToTop onClick={() => window.scrollTo(0, 0)} />}
-		</>
+		</div>
 	);
 }
 

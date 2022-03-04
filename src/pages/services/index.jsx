@@ -1,5 +1,4 @@
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useTranslation } from "react-i18next";
 
 import Banner from '../../components/smallBanner';
@@ -11,24 +10,24 @@ import * as routes from '../../constants/routes';
 
 const Services = props => {
     const { t } = useTranslation();
-    const services = t("services", { returnObjects: true });
-    const [ currentService, setCurrentService ] = React.useState(props.location.state ? props.location.state.index : 0);
+    const services = t("services.content", { returnObjects: true });
+    const [ currentService, setCurrentService ] = React.useState(props.location.state ? props.location.state.index : 1);
 
     React.useEffect(() => {
-        setCurrentService(props.location.state ? props.location.state.index : 0);
+        setCurrentService(props.location.state ? props.location.state.index : 1);
     }, [props.location.state]);
 
-    const renderServices = () => Array.isArray(services) && services.map((service, index) => {
-        return <li key={service.id} onClick={() => setCurrentService(index)} className={currentService + 1 === service.id ? styles.current : ''}>{service.name}</li>;
+    const renderServices = () => Array.isArray(services) && services.map(service => {
+        return <li key={service.id} onClick={() => setCurrentService(service.id)} className={currentService === service.id ? styles.current : ''}>{service.name}</li>;
     });
 
-    const renderContent = () => Array.isArray(services) && services[currentService].description.map((item, index) => {
-        return <p key={index}>{item}</p>;
+    const renderContent = () => Array.isArray(services) && services[currentService-1].description.map((item, index) => {
+        return <p key={index} dangerouslySetInnerHTML={{ __html: item }}/>;
     });
 
     return (
         <div className={styles.services}>
-            <Banner src={BannerImage} title={Array.isArray(services) && services[currentService].name} />
+            <Banner src={BannerImage} title={Array.isArray(services) && services[currentService-1].name} />
             <div className={styles.services_content}>
                 <div className={styles.services_content_left}>
                     <ul>
@@ -36,7 +35,7 @@ const Services = props => {
                     </ul>
                 </div>
                 <div className={styles.services_content_right}>
-                    <LazyLoadImage src={Array.isArray(services) && services[currentService].image} />
+                    <img src={Array.isArray(services) && services[currentService-1].image} />
                     <div className={styles.services_content_right_text}>
                         { renderContent() }
                         <Button text={t("lessonButton")} medium={true} type={'primary'} onClick={() => props.history.push(routes.PRICING)}/>

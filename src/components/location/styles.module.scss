@@ -17,6 +17,7 @@
     &_left {
         width: 55%;
         opacity: .8;
+        position: relative;
 
         @media (max-width: 767px) {
             width: 100%;
@@ -33,6 +34,7 @@
 
     &_right {
         width: 35%;
+        position: relative;
 
         @media (max-width: 767px) {
             width: 100%;

@@ -14,13 +14,14 @@
             ]
         },
         { "id": 4, "name": "Pricing" , "link": "/pricing" },
-        { "id": 5, "name": "Contact" , "link": "/contact" }
+        { "id": 5, "name": "Contact" , "link": "/contact" },
+        { "id": 6, "name": "FAQ" , "link": "/faq" }
     ],
     "home": {
         "banner": [
-            "wind, water, lifestyle.",
-            "kite school",
-            "zadar"
+            "Maestral",
+            "kitesurf club",
+            "privlaka"
         ],
         "about": {
             "title": {
@@ -36,7 +37,7 @@
         "location": {
             "title": {
                 "first": "Location",
-                "second": "Great spots",
+                "second": "Great spot",
                 "third": "Kitesurfing lessons on sand beaches in Northern Dalmatia"
             },
             "description": "20 km north from the city of Zadar - more precisely in the vicinity of city of Nin. This is area with sand beaches and a lot of shallow waters. This is great for beginners and learning. The exact place depends on wind direction but all the beaches are nearby, we go to places where we can get the best wind."
@@ -49,17 +50,17 @@
             },
             "cards": [
                 {
-                    "image": "/img/grey.jpeg",
+                    "image": "/img/kitesurf-maestral-3.jpg",
                     "title": "Beginners course",
                     "text": "If you are a beginner and want to get up on the board beginners course is the option for you."
                 },
                 {
-                    "image": "/img/grey.jpeg",
+                    "image": "/img/kitesurf-maestral-4.jpg",
                     "title": "Trial course",
                     "text": "If you are a beginner and just want to learn flying the big depowerable kite, trial course is the option for you."
                 },
                 {
-                    "image": "/img/grey.jpeg",
+                    "image": "/img/kitesurf-maestral-6.jpg",
                     "title": "Improvers lessons",
                     "text": "If you already have some kiting skills but want to improve, you can take improvers lessons. We can help you to make that leap to the next level."
                 }
@@ -73,126 +74,185 @@
         "pricing": {
             "first": "Pricing",
             "second": "Kite School Programs",
-            "third": "Visit the beach and experience kitesurfing"
+            "third": "Visit us and experience kitesurfing"
         }
     },
     "about": {
+        "title": "About",
+        "advantages": {
+            "title": {
+                "first": "Advantages",
+                "second": "Why Learn How To Kitesurf With Us?",
+                "third": "We want our clients to feel awesome and unique."
+            },
+            "weather": "Great conditions for learning to kite",
+            "wave": "Safest spot home to flat and shallow",
+            "board": "Equipment that suits you best"
+
+        },
+        "teamTitle": {
+            "first": "Team",
+            "second": "We Are Energetic Experts",
+            "third": "We want our clients to feel awesome and unique."
+        },
+        "servicesTitle": {
+            "first": "Services",
+            "second": "Let’s Start An Education!",
+            "third": "Kitesurfing lessons on sand beaches in Northern Dalmatia"
+        },
+        "galleryTitle": {
+            "first": "Gallery",
+            "second": "Our Photos & Videos",
+            "third": "Passion and obsession to freedom of movement."
+        },
         "team": [
-            { "name": "Grey", "role": "Kite Teacher", "image": "/img/grey.jpeg" },
-            { "name": "Grey G. Grey", "role": "Kite Assistent", "image": "/img/grey.jpeg" },
-            { "name": "Grey", "role": "Kite Teacher", "image": "/img/grey.jpeg" }
+            { "name": "Šime Vukman", "role": "Kite Instructor", "image": "/img/grey.jpeg" },
+            { "name": "Krešo", "role": "Kite Instructor", "image": "/img/grey.jpeg" },
+            { "name": "Grey G. Grey", "role": "Kite Assistent", "image": "/img/teacherGrey.jpg" }
         ]
     },
-    "pricing": [
-        {
-            "id": 1,
-            "price": 270,
-            "description": [
-                "6 hour Beginners course",
-                "Equipment",
-                "Kite control",
-                "Safety systems",
-                "Kite Launch and landing"
-            ]
-        },
-        {
-            "id": 2,
-            "price": 490,
-            "description": [
-                "12 hour Beginners course",
-                "Equipment",
-                "Kite control",
-                "Safety systems",
-                "Kite Launch and landing"
-            ]
-        },
-        {
-            "id": 3,
-            "price": 90,
-            "description": [
-                "2 hour Trial course",
-                "Kite control",
-                "Body drag with board",
-                "Body rotation control",
-                "Steady Pull"
-            ]
-        },
-        {
-            "id": 4,
-            "price": 150,
-            "description": [
-                "3 hour Improvers package",
-                "Equipment",
-                "Various turns",
-                "Riding toeside",
-                "Jumping or spinning"
-            ]
-        },
-        {
-            "id": 5,
-            "price": 55,
-            "description": [
-                "Single hour",
-                "Equipment",
-                "Various turns",
-                "Riding toeside",
-                "Jumping or spinning"
-            ]
-        }
-    ],
-    "services": [
-        { 
-            "id": 1,
-            "name": "Beginner course",
-            "image": "/img/service.jpg",
-            "text": "If you are a beginner and want to get up on the board beginners course is the option for you.",
-            "description": [
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?"
-            ]
-        },
-        {
-            "id": 2,
-            "name": "Trial course",
-            "image": "/img/banner.jpg",
-            "text": "If you are a beginner and just want to learn flying the big depowerable kite, trial course is the option for you.",
-            "description": [
-                "dfgdggLorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?"
-            ]
-        },
-        {
-            "id": 3,
-            "name": "Improvment",
-            "image": "/img/service.jpg",
-            "text": "If you already have some kiting skills but want to improve, you can take improvers lessons. We can help you to make that leap to the next level.",
-            "description": [
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "fdgdfgLorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?",
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio dolorem eveniet facere quae quos, pariatur, eum fugiat aspernatur quaerat quo vitae qui iure, saepe nesciunt libero asperiores fuga inventore?"
-            ]
-        }
-    ],
-    "contact": [
-        { "title": "Phone", "text": "+1 201 918 47 81</br>+1 201 890 81 40", "icon": "img/phone.png" },
-        { "title": "Adress", "text": "477 Jehovah Drive</br>Lexington, VA 24450", "icon": "img/location.png" },
-        { "title": "Email", "text": "<a href='mailto:werfy@info.com'>werfy@info.com</a></br><a href='mailto:adm@werfy.com'>adm@werfy.com</a>", "icon": "img/email.png" }
-    ],
+    "pricing": {
+        "title": "Pricing",
+        "content": [
+            {
+                "id": 1,
+                "price": 270,
+                "title": "Beginners course",
+                "color": "rgb(0,255,106)",
+                "description": [
+                    "6 hours",
+                    "Equipment",
+                    "Kite control",
+                    "Safety systems",
+                    "Kite Launch and landing"
+                ]
+            },
+            {
+                "id": 2,
+                "price": 490,
+                "title": "Beginners course",
+                "color": "rgb(0,255,106)",
+                "description": [
+                    "12 hours",
+                    "Equipment",
+                    "Kite control",
+                    "Safety systems",
+                    "Kite Launch and landing"
+                ]
+            },
+            {
+                "id": 3,
+                "price": 90,
+                "title": "Trial course",
+                "color": "#647EF9",
+                "description": [
+                    "2 hours",
+                    "Kite control",
+                    "Body drag with board",
+                    "Body rotation control",
+                    "Steady Pull"
+                ]
+            },
+            {
+                "id": 4,
+                "price": 150,
+                "title": "Improvers package",
+                "color": "#FBB13D",
+                "description": [
+                    "3 hours",
+                    "Equipment",
+                    "Various turns",
+                    "Riding toeside",
+                    "Jumping or spinning"
+                ]
+            },
+            {
+                "id": 5,
+                "price": 55,
+                "title": "Single hour",
+                "color": "#ED0C09",
+                "description": [
+                    "Equipment",
+                    "Various turns",
+                    "Riding toeside",
+                    "Jumping or spinning"
+                ]
+            }
+        ]
+    },
+    "services": {
+        "title": "Services",
+        "content": [
+            { 
+                "id": 1,
+                "name": "Beginner course",
+                "image": "/img/kitesurf-maestral-3.jpg",
+                "text": "If you are a beginner and want to get up on the board beginners course is the option for you.",
+                "description": [
+                    "To complete the full beginners course it takes minimum of two, usually three days. The course can be divided into three steps.",
+                    "<h4>Learning the basics</h4>",
+                    "First you need to learn about the beach and local winds, kites and other gear, safety and right of way rules. You will start flying on a 2 line trainer kite and learn how to use the wind window and power zones to control the delivery of pull from the kite.",
+                    "<h4>The big kite</h4>",
+                    "Time to introduce the big depowerable 4 (or 5) line kite. Before you go in the water with the kite you will learn how to set up the kite and use its safety systems. Flying the big depowerable kite includes proper use of the control bar, water relaunch, power diving the kite, controling the kite in underpowered and overpowered conditions, controling the kite with one hand, self rescue and more.",
+                    "<h4>Board time</h4>",
+                    "Once you have the big kite under control, you are ready for getting up on the board. You will learn to power dive the kite to get on the board and adjust leg and body position when you feel the pull from the kite. Once you pick up speed, it is all about holding the balance on board and edging. At this stage, any previous snowboarding/wakeboarding/skateboarding experience should help you to get going more easily.",
+                    "Each step is individual and it all depends on you, your concentration, will and desire. There is a possibility of the need for more or less hours to achieve the desired goal."
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Trial course",
+                "image": "/img/kitesurf-maestral-4.jpg",
+                "text": "If you are a beginner and just want to learn flying the big depowerable kite, trial course is the option for you.",
+                "description": [
+                    "If you are a beginner and just want to learn flying the big depowerable kite, this is the option for you. Let's say you are attracted to kitesurfing but you are not sure if it will be the right thing for you. Trial course is the best way to find out.",
+                    "2 hour trial includes basic theory, flying the trainer kite, setting up the big kite and flying the big kite, and finally - body drag."
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Improvment",
+                "image": "/img/kitesurf-maestral-6.jpg",
+                "text": "If you already have some kiting skills but want to improve, you can take improvers lessons. We can help you to make that leap to the next level.",
+                "description": [
+                    "If you already have some basic experience, let's say you already took some lessons last year but you are still not happy with your skill, we can help you to make the leap to the next level.",
+                    "This is also option for those more advanced who already have riding skills but want to improve, whether it is riding upwind, learning to make different turns, riding toeside, jumping or spinning. In kitesurfing there is no end to possibilities."
+                ]
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contact",
+        "content": [
+            { "title": "Phone", "text": "+1 201 918 47 81</br>+1 201 890 81 40", "icon": "img/phone.png" },
+            { "title": "Adress", "text": "Virski put 23233</br>Privlaka, Zadar County", "icon": "img/location.png" },
+            { "title": "Email", "text": "<a href='mailto:info@maestral-kitesurfing.com'>info@maestral-kitesurfing.com</a>", "icon": "img/email.png" }
+        ]
+    },
     "faq": [
-        { "id": 1, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
-        { "id": 2, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
-        { "id": 3, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
-        { "id": 4, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
-        { "id": 5, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
-        { "id": 6, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
-        { "id": 7, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."},
-        { "id": 8, "title": "Can anyone kitesurf?", "text": "specialize in private kitesurfing lessons, semi-private kitesurfing lessons, and we are now proud to offer an exclusive tandem kiteboarding experience right here in Portugal! We teach kiteboarding at our epic local spot near Óbidos, in a flat water lagoon home to consistent winds and butter flat water."}
+        { "id": 1, "title": "Can anyone kitesurf?", "text": "Yes, if you are keen enough and persist to learn. Like skiing, technique is a lot more important that brute strength."},
+        { "id": 2, "title": "Is kitesurfing hard to learn?", "text": "No. Around 6 lessons should get you going with basic skills and another 5 to 10 sessions should see you going upwind. It can be difficult to schedule lessons though if the wind doesn't oblige."},
+        { "id": 3, "title": "Will I kitesurf after course?", "text": "Each step is individual and it all depends on you, your concentration, will and desire. There is a possibility of the need for more or less hours to achieve the desired goal."},
+        { "id": 4, "title": "Why kitesurf?", "text": "You experience the freedom of surfing without having to paddle out or wait for waves. You can fly like a glider without a hard landing. You get the speed of wakeboarding without needing a boat. You can travel long distances powered only by the wind. You can experience the thrill of carving and turning a board without travelling to the snow or risking gravel rash."},
+        { "id": 5, "title": "What is the difference between kitesurfing and kiteboarding?", "text": "There is really no difference. The terms are used interchangeably. However, some people may consider kitesurfing to be kiting in surf (wave riding)."},
+        { "id": 6, "title": "Can you go upwind when kitesurfing?", "text": "Yes. You fly the kite to the front of the wind window in your direction of travel (like reefing a mainsail in), edge your board to create a 'keel', and steer with your feet to create a 'rudder'. Kitesurfers are actually classified as sailing vessels."},
+        { "id": 7, "title": "Is it OK to use a board leash when I am learning?", "text": "No. If you get yanked hard the board will come at you hard and could easily knock you unconscious or injure you. Learn to body drag upwind so you can retrieve your board if you lose it. "},
+        { "id": 8, "title": "How much does it cost to buy the gear?", "text": "You can buy a complete set of secondhand gear (board, kite + bar, harness), depending on condition, anywhere from A$600 to A$2000.  Price ranges for new gear are:  Kite: A$900 to A$2000, Board: A$750 to A$1300, Harness: A$120 to A$250. Please note that if you are buying a second hand kite, make sure that the kite you are buying is less than 4 years old. Every year there are improvements in the safety of kites - by buying a relatively recent kite you will keep yourself safe. Never be tempted into buying a cheap old kite if you are a beginner - they are cheap for a reason and can be dangerous."},
+        { "id": 9, "title": "Can I relaunch the kite from the water?", "text": "Yes. You can relaunch it from the water after a fall.  The degree of re-launch ability may vary depending on the type of kite you are using."},
+        { "id": 10, "title": "Does a surfer need assistance to launch or land the kite?", "text": "You normally do not need any assistance to launch or land your kite unless you are on a crowded and busy beach with a considerable shore break. Different kites have different launching, landing, and water relaunching techniques. Your vendor should be able to provide you with the appropriate instructions."}
     ],
     "lessonButton": "book a lesson",
-    "learnMore": "learn more"
+    "learnMore": "learn more",
+    "email": {
+        "title": "Leave a message",
+        "submit": "Send",
+        "requiredError" : "* This field is required",
+        "nameError": "* Name must contain at least two letters",
+        "emailError": "* Email is not valid",
+        "thankYou": "<h2>THANK YOU!</h2></br>Your message has been recieved and we will contact you shortly to follow-up. If you would like to speak to someone immediately feel free to call."
+    },
+    "footer": {
+        "title": "Sand beaches in Privlaka are the well-known kite spot in the lagoon.",
+        "links": "Userful Links" 
+    }
 }
