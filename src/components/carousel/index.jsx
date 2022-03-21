@@ -65,7 +65,7 @@ const Carousel = props => {
         .slick-slide div {
             display: flex;
             justify-content: center;
-            height: 100%;
+            height: ${props.height || '100%'};
             overflow: hidden;
         }
         .slick-slide {

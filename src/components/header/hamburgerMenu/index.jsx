@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineMenuFold } from "react-icons/ai";
+import { CgMenuLeftAlt } from "react-icons/cg";
 import style from './style.module.scss';
 import { useTranslation } from "react-i18next";
 import { withRouter } from 'react-router'
@@ -75,13 +75,13 @@ const HamburgerMenu = props => {
     return (
         <div className={[style.wrapper, open ? style.open : ''].join(' ')}>
             <div className={style.nav}>
-                <AiOutlineMenuFold 
+                <CgMenuLeftAlt 
                     className={style.nav__icon}
                     type='menu-fold'
                     onClick={() => handleClick()}
                 />
                 <div className={style.nav__body}>
-                    <div className={style.title}>Maestral</div>
+                    <div className={style.title}>Ma<CgMenuLeftAlt className={style.title_letter}/>stral</div>
                     <ul className={[style.navigation, openLang ? style.open_lang : ''].join(' ')}>
                         { renderNavigation() }
                     </ul>

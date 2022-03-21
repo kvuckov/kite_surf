@@ -8,9 +8,9 @@
             "link": "/services",
             "subLink": "/services_details",
             "subLinks": [
+                "Entdeckungskurs",
                 "Anfängerkurs",
-                "Schnupperkurs",
-                "Fortgeschrittenenkurs"
+                "Selbstständiger Unterricht"
             ]
         },
         { "id": 4, "name": "Preise" , "link": "/pricing" },
@@ -40,7 +40,7 @@
                 "second": "Tolle Stellen",
                 "third": "Kitesurf-Unterricht an Sandstränden in Norddalmatien"
             },
-            "description": "20 km nördlich von der Stadt Zadar - genauer gesagt in der Nähe der Stadt Nin. Dies ist ein Gebiet mit Sandstränden und vielen seichten Gewässern. Dies ist ideal für Anfänger und zum Lernen. Der genaue Ort hängt von der Windrichtung ab, aber alle Strände sind in der Nähe, wir gehen an Orte, an denen wir den besten Wind haben."
+            "description": "20 km nördlich von der Stadt Zadar - genauer gesagt in der Nähe der Stadt Nin. Dies ist ein Gebiet mit Sandstränden und vielen seichten Gewässern. Dies ist ideal für Anfänger und zum Lernen. Der Spot befindet sich in der perfekten Position, die für viele verschiedene Windrichtungen geeignet ist, und das ist alles, was für ein qualitativ hochwertiges und sicheres Lernen erforderlich ist."
         },
         "services": {
             "title": {
@@ -50,19 +50,19 @@
             },
             "cards": [
                 {
-                    "image": "/img/kitesurf-maestral-3.jpg",
-                    "title": "Anfängerkurs",
-                    "text": "Solltest Du Anfänger sein und möchtest Boarden lernen, ist dies die richtige Wahl für Dich."
+                    "image": "/img/kitesurf-maestral-4.jpg",
+                    "title": "Entdeckungskurs",
+                    "text": "Wenn Sie sich noch nicht sicher sind, ob Kitesurfen ein Sport für Sie ist, dann ist dies der richtige Kurs für Sie."
                 },
                 {
-                    "image": "/img/kitesurf-maestral-4.jpg",
-                    "title": "Schnupperkurs",
-                    "text": "Solltest Du Anfänger sein und möchtest einfach nur den großen Depowerable Kite lenken, ohne auf das Brett zu steigen, ist das Deine Option."
+                    "image": "/img/kitesurf-maestral-3.jpg",
+                    "title": "Anfängerkurs",
+                    "text": "In diesem Kurs lernen Sie alle Elemente des Kitesurfens, das Aufstehen an Bord und das Fahren mit dem Wind. Nach diesem Kurs wäre der nächste Schritt, Ihre Fähigkeiten zu verbessern und Ihre neue Leidenschaft ein Leben lang zu genießen!"
                 },
                 {
                     "image": "/img/kitesurf-maestral-6.jpg",
-                    "title": "Fortgeschrittenenkurs",
-                    "text": "Solltest Du bereits Grunderfahrung haben, bist aber mit Deinen Fähigkeiten noch nicht zufrieden, helfen wir Dir dabei, das nächste Level zu erreichen."
+                    "title": "Selbstständiger Unterricht",
+                    "text": "Wenn Sie bereits etwas über Kitesurfen wissen und Ihre Fähigkeiten auf das nächste Level verbessern möchten, dann ist dies die perfekte Lektion für Sie."
                 }
             ]
         },
@@ -106,9 +106,8 @@
             "third": "Leidenschaft und Obsession für Bewegungsfreiheit."
         },
         "team": [
-            { "name": "Šime Vukman", "role": "Kitelehrer", "image": "/img/grey.jpeg" },
-            { "name": "Krešo", "role": "Kitelehrer", "image": "/img/grey.jpeg" },
-            { "name": "Grey G. Grey", "role": "Kite-Assistent", "image": "/img/teacherGrey.jpg" }
+            { "name": "Vuko", "role": "Kitelehrer", "image": "/img/vuko.jpeg", "desctiptionLess": "Addicted to kitesurfing since 2016, after a couple of years of traveling worldwide I started teaching others all the beauty of this sport. Spending a lot", "descriptionMore": "of time in the water, visiting and exploring new places, chasing the wind developed me into an experienced instructor who likes to share the stoke and enjoy nature. When it's not windy I'm still above the ground highlining or free climbing where I'm finding my freedom." },
+            { "name": "Krešo", "role": "Kitelehrer", "image": "/img/kreso.jpeg", "desctiptionLess": "Started kiting in 2009 at the age of 31. Teaching kitesurfing throughout the Croatian coast since 2012. Over the winter", "descriptionMore": "I get out of the water and become a snowboarder and snowboarding teacher. Kiting brought me a positive and permanent lifestyle change: took me out of the office and brought me the excitement of adrenaline and freedom of movement. For me, it is a perfect getaway from the madness of the world we live in. It is my mission to help people find this passion too. Motto: it is never too late to start." }
         ]
     },
     "pricing": {
@@ -116,66 +115,54 @@
         "content": [
             {
                 "id": 1,
-                "price": 270,
-                "title": "Anfängerkurs",
+                "price": 100,
+                "title": "Entdeckungskurs",
                 "color": "rgb(0,255,106)",
                 "description": [
-                    "6 Stunden",
-                    "Ausrüstung",
-                    "Drachenkontrolle",
-                    "Sicherheitssysteme",
-                    "Drachenstart und -landung"
+                    "2 Stunden",
+                    "Windtheorie und Windfenstertheorie",
+                    "Trainer-Kite-Steuerung",
+                    "Sicherheitssystem und Kite aufgebaut",
+                    "Grundlegende Big-Kite-Steuerung"
                 ]
             },
             {
                 "id": 2,
-                "price": 490,
+                "price": 360,
                 "title": "Anfängerkurs",
-                "color": "rgb(0,255,106)",
+                "color": "#ED0C09",
                 "description": [
-                    "12 Stunden",
-                    "Ausrüstung",
-                    "Drachenkontrolle",
-                    "Sicherheitssysteme",
-                    "Drachenstart und -landung"
+                    "6 Stunden",
+                    "Entdeckungskurs",
+                    "Selbstrettung",
+                    "Betreten und verlassen Sie das Wasser",
+                    "Kitekontrolle und Relaunch aus dem Wasser",
+                    "Körperwiderstand bei Wind und Aufwind",
+                    "Wasserstart und Vorwind fahren"
                 ]
             },
             {
                 "id": 3,
-                "price": 90,
-                "title": "Schnupperkurs",
+                "price": 70,
+                "title": "Selbstständiger Unterricht",
                 "color": "#647EF9",
                 "description": [
-                    "2 Stunden",
-                    "Drachenkontrolle",
-                    "Bodydrag mit Brett",
-                    "Steuerung der Körperdrehung",
-                    "Steady Pull"
+                    "1 Stunde",
+                    "Aufwind reiten - Zehenseitenreiten",
+                    "Theorie und Regeln für das Springen",
+                    "Einstiegsniveau für Freestyle-Skills",
+                    "Trägerloses Surfbrett und so weiter"
                 ]
             },
             {
                 "id": 4,
-                "price": 150,
-                "title": "Fortgeschrittenenkurs",
+                "price": 100,
+                "title": "Privatunterricht",
                 "color": "#FBB13D",
                 "description": [
-                    "3 Stunden",
-                    "Ausrüstung",
-                    "Verschiedene Wendungen",
-                    "Zehenseite reiten",
-                    "Springen oder drehen"
-                ]
-            },
-            {
-                "id": 5,
-                "price": 55,
-                "title": "Einzelne Stunde",
-                "color": "#ED0C09",
-                "description": [
-                    "Ausrüstung",
-                    "Verschiedene Wendungen",
-                    "Zehenseite reiten",
-                    "Springen oder drehen"
+                    "1 Stunde",
+                    "1 zu 1",
+                    "Individuell auf Ihre Bedürfnisse abgestimmter Unterricht"
                 ]
             }
         ]
@@ -183,13 +170,23 @@
     "services": {
         "title": "Dienstleistungen",
         "content": [
-            { 
+            {
                 "id": 1,
+                "name": "Entdeckungskurs",
+                "image": "/img/kitesurf-maestral-4.jpg",
+                "text": "Wenn Sie sich noch nicht sicher sind, ob Kitesurfen ein Sport für Sie ist, dann ist dies der richtige Kurs für Sie.",
+                "description": [
+                    "In dieser Art von Kurs werden wir die folgenden Elemente durchgehen, die Sie später verwenden können, und einfach mit dem Anfängerkurs fortfahren, wenn Sie erkennen, wie herausfordernd und erstaunlich dieser Sport ist!",
+                    "Der 2-stündige Entdeckungskurs umfasst grundlegende Theorie, das Fliegen des Trainerdrachens, das Sicherheitssystem und den Kiteaufbau sowie die grundlegende Steuerung des großen Kites."
+                ]
+            },
+            { 
+                "id": 2,
                 "name": "Anfängerkurs",
                 "image": "/img/kitesurf-maestral-3.jpg",
-                "text": "Solltest Du Anfänger sein und möchtest Boarden lernen, ist dies die richtige Wahl für Dich.",
+                "text": "In diesem Kurs lernen Sie alle Elemente des Kitesurfens, das Aufstehen an Bord und das Fahren mit dem Wind. Nach diesem Kurs wäre der nächste Schritt, Ihre Fähigkeiten zu verbessern und Ihre neue Leidenschaft ein Leben lang zu genießen!",
                 "description": [
-                    "Um den vollständigen Anfängerkurs abzuschließen, dauert es mindestens zwei, in der Regel drei Tage. Der Kurs wird in drei Schritte gegliedert.",
+                    "Um den vollständigen Anfängerkurs zu absolvieren, dauert es drei Tage, jeden Tag 2 Stunden. Der Kurs ist in drei Schritte unterteilt.",
                     "<h4>Die Grundlagen</h4",
                     "In der Theorie lernst Du zunächst etwas über den Strand, die lokalen Winde, die Kites und Ausrüstung, die Sicherheit und Vorfahrtsregeln. Im anschließenden praktischen Teil beginnst Du auf einem 2-Leinen Trainer Kite zu fliegen und lernst, das Windfenster und die Kraftzonen zu nutzen, um den Kite zu kontrollieren.",
                     "<h4>Der große Kite</h4",
@@ -200,23 +197,13 @@
                 ]
             },
             {
-                "id": 2,
-                "name": "Schnupperkurs",
-                "image": "/img/kitesurf-maestral-4.jpg",
-                "text": "Solltest Du Anfänger sein und möchtest einfach nur den großen Depowerable Kite lenken, ohne auf das Brett zu steigen, ist das Deine Option.",
-                "description": [
-                    "Solltest Du Anfänger sein und möchtest einfach nur den großen Depowerable Kite lenken, ohne auf das Brett zu steigen, ist das Deine Option. Angenommen Du hast Interesse am Kitesurfen, bist Dir aber nicht sicher, ob es das Richtige für Dich ist, ist ein Schnupperkurs die beste Möglichkeit, um es herauszufinden.",
-                    "Der 2-stündige Schnupperkurs beinhaltet eine Basis-Theorie, Fliegen des Trainer Kites sowie den großen Kite aufzustellen und zu fliegen, und schlussendlich - body drag."
-                ]
-            },
-            {
                 "id": 3,
-                "name": "Fortgeschrittenenkurs",
+                "name": "Selbstständiger Unterricht",
                 "image": "/img/kitesurf-maestral-6.jpg",
-                "text": "Solltest Du bereits Grunderfahrung haben, bist aber mit Deinen Fähigkeiten noch nicht zufrieden, helfen wir Dir dabei, das nächste Level zu erreichen.",
+                "text": "Wenn Sie bereits etwas über Kitesurfen wissen und Ihre Fähigkeiten auf das nächste Level verbessern möchten, dann ist dies die perfekte Lektion für Sie.",
                 "description": [
-                    "Solltest Du bereits Grunderfahrung haben, bist aber mit Deinen Fähigkeiten noch nicht zufrieden, helfen wir Dir dabei, das nächste Level zu erreichen.",
-                    "Dies ist ebenfalls eine Option für Fortgeschrittene, die ihre Fähigkeiten verbessern möchten. Ganz gleich, ob es sich dabei handelt im Upwind zu fahren, verschiedene Turns zu lernen, Toeside zu fahren, zu springen oder Drehungen zu vollführen. Im Kitesurfen gibt es endlose Möglichkeiten."
+                    "Wenn Sie bereits Grundkenntnisse haben, sagen wir, Sie haben bereits letztes Jahr Unterricht genommen, sind aber immer noch nicht zufrieden mit Ihren Fähigkeiten, können wir Ihnen helfen, den Sprung auf die nächste Stufe zu schaffen.",
+                    "Dies ist auch eine Option für Fortgeschrittene, die bereits über Reitkenntnisse verfügen, sich aber verbessern möchten, sei es gegen den Wind fahren, lernen, verschiedene Kurven zu fahren, Toeside zu fahren, zu springen oder sich zu drehen. Beim Kitesurfen sind den Möglichkeiten keine Grenzen gesetzt."
                 ]
             }
         ]

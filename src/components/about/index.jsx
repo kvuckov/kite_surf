@@ -41,7 +41,6 @@ const About = props => {
             top: '20px'
         }, {
             duration: .8,
-            delay: 1,
             autoAlpha: 1,
             top: 0,
             ease: 'none',

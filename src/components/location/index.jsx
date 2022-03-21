@@ -29,7 +29,7 @@ const Location = () => {
             }
         });
         gsap.fromTo('.location_left', {
-            scale: 2
+            scale: 1.5
         }, {
             duration: 1,
             scale: 1,
@@ -62,7 +62,7 @@ const Location = () => {
         <div className={[styles.location, 'location'].join(' ')} >
             <div className={[styles.location_left, 'location_left'].join(' ')}>
                 <img src={Zadar} />
-            </div>-
+            </div>
             <div className={[styles.location_right, 'location_right'].join(' ')}>
                 <Heading content={data.title} left={true} />
                 <div className={[styles.locations, "text"].join(' ')}>

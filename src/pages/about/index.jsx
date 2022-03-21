@@ -89,6 +89,7 @@ const PHOTO_SET = [
 ];
 const About = props => {
     const { t } = useTranslation();
+    const [showDescription, setShowDescription] = React.useState(-1);
     const services = t("services.content", { returnObjects: true });
     const about = t("about", { returnObjects: true });
 
@@ -104,6 +105,10 @@ const About = props => {
             <img src={member.image}/>
             <h5>{member.name}</h5>
             <p>{member.role}</p>
+            <div className={style.about_team_member_description}>
+                {member.desctiptionLess}{showDescription !== index && '...'}{showDescription !== index && <p onClick={() => setShowDescription(index)}>Show more</p>}
+                {showDescription === index && <>{member.descriptionMore}<p onClick={() => setShowDescription(-1)}>Show less</p></>}
+            </div>
         </div>
     );
 
@@ -113,7 +118,7 @@ const About = props => {
             <Advantages />
             <div className={style.about_team}>
                 <Heading content={about.teamTitle} theme={'center'} style={style.title} />
-                <Carousel data={renderTeam()} firstBreakpoint={1450} secondBreakpoint={1000}/>
+                <Carousel data={renderTeam()} firstBreakpoint={1450} secondBreakpoint={1000} height='auto'/>
             </div>
             <div className={style.about_services}>
                 <Heading content={about.servicesTitle} theme={'center'} style={style.title}/>

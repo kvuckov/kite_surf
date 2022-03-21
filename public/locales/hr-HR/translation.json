@@ -8,9 +8,9 @@
             "link": "/services",
             "subLink": "/services_details",
             "subLinks": [
-                "Početnički tečaj",
                 "Probni tečaj",
-                "Napredni tečaj"
+                "Početnički tečaj",
+                "Napredna lekcija"
             ]
         },
         { "id": 4, "name": "Cijene" , "link": "/pricing" },
@@ -40,7 +40,7 @@
                 "second": "Privlaka",
                 "third": "Kitesurfing lekcije na pješčanim plažama Sjeverne Dalmacije"
             },
-            "description": "Poduku kitesurfinga organiziramo 20-ak kilometara sjeverno od Zadra, u općini Privlaka. Ovo je područje s kilometrima pješčanih plaža i plićaka - idealno okruženje za učenje kitesurfinga. Radimo u plitkom i nije potrebno plivati što značajno olakšava proces učenja. Također, mjesto je otvoreno prema različitim smjerovima vjetra."
+            "description": "Poduku kitesurfinga organiziramo 20-ak kilometara sjeverno od Zadra, u općini Privlaka. Ovo je područje s kilometrima pješčanih plaža i plićaka - idealno okruženje za učenje kitesurfinga. Radimo u plitkom i nije potrebno plivati što značajno olakšava proces učenja. Mjesto se nalazi na savršenoj poziciji koja je pogodna za mnogo različitih smjerova vjetra i to je sve što je potrebno za kvalitetno i sigurno učenje."
         },
         "services": {
             "title": {
@@ -50,19 +50,19 @@
             },
             "cards": [
                 {
-                    "image": "/img/kitesurf-maestral-3.jpg",
-                    "title": "Početnički tečaj",
-                    "text": "Ako ste početnik i želite naučiti glisirati na dasci ovo je opcija za vas."
-                },
-                {
                     "image": "/img/kitesurf-maestral-4.jpg",
                     "title": "Probni tečaj",
-                    "text": "Ako ste početnik i samo želite naučiti upravljati velikim zmajem bez vožnje na dasci, ovo je opcija za vas."
+                    "text": "Ako još uvijek niste sigurni je li kitesurfing sport za vas onda je ovo pravi tečaj za vas."
+                },
+                {
+                    "image": "/img/kitesurf-maestral-3.jpg",
+                    "title": "Početnički tečaj",
+                    "text": "Na ovom tečaju naučit ćete sve elemente kitesurfanja, ustajanja na brod i vožnje niz vjetar. Nakon ovog tečaja, sljedeći korak bi bio poboljšati svoje vještine i početi uživati u svojoj novoj strasti za cijeli život!"
                 },
                 {
                     "image": "/img/kitesurf-maestral-6.jpg",
-                    "title": "Napredni tečaj",
-                    "text": "Ovo je opcija za one koji još ne glisiraju na dasci, ali i one koji to već rade ali žele nadograditi vještinu."
+                    "title": "Napredna lekcija",
+                    "text": "Ako već imate određeno znanje o kitesurfingu i želite unaprijediti svoje vještine na sljedeću razinu, onda je ovo savršena lekcija za vas."
                 }
             ]
         },
@@ -106,9 +106,8 @@
             "third": "Strast i opsesija slobode kretanja."
         },
         "team": [
-            { "name": "Šime Vukman", "role": "Kite Instructor", "image": "/img/grey.jpeg" },
-            { "name": "Krešo", "role": "Kite Instructor", "image": "/img/grey.jpeg" },
-            { "name": "Grey G. Grey", "role": "Kite Assistent", "image": "/img/teacherGrey.jpg" }
+            { "name": "Vuko", "role": "Kite Instructor", "image": "/img/vuko.jpeg", "desctiptionLess": "Addicted to kitesurfing since 2016, after a couple of years of traveling worldwide I started teaching others all the beauty of this sport. Spending a lot", "descriptionMore": "of time in the water, visiting and exploring new places, chasing the wind developed me into an experienced instructor who likes to share the stoke and enjoy nature. When it's not windy I'm still above the ground highlining or free climbing where I'm finding my freedom." },
+            { "name": "Krešo", "role": "Kite Instructor", "image": "/img/kreso.jpeg", "desctiptionLess": "Started kiting in 2009 at the age of 31. Teaching kitesurfing throughout the Croatian coast since 2012. Over the winter", "descriptionMore": "I get out of the water and become a snowboarder and snowboarding teacher. Kiting brought me a positive and permanent lifestyle change: took me out of the office and brought me the excitement of adrenaline and freedom of movement. For me, it is a perfect getaway from the madness of the world we live in. It is my mission to help people find this passion too. Motto: it is never too late to start." }
         ]
     },
     "pricing": {
@@ -116,66 +115,54 @@
         "content": [
             {
                 "id": 1,
-                "price": 270,
-                "title": "Početnički tečaj",
+                "price": 100,
+                "title": "Probni tečaj",
                 "color": "rgb(0,255,106)",
                 "description": [
-                    "6 sati",
-                    "Oprema",
-                    "Kite kontrola",
-                    "Sigurnosni sustavi",
-                    "Lansiranje i slijetanje Kite-a"
+                    "2 sata",
+                    "Teorija vjetra i teorija prozora vjetra",
+                    "Kontrola trener kajta",
+                    "Sigurnosni sustav i postavljanje zmaja",
+                    "Osnovna kontrola velikog zmaja"
                 ]
             },
             {
                 "id": 2,
-                "price": 490,
+                "price": 360,
                 "title": "Početnički tečaj",
-                "color": "rgb(0,255,106)",
+                "color": "#ED0C09",
                 "description": [
-                    "12 sati",
-                    "Oprema",
-                    "Kite kontrola",
-                    "Sigurnosni sustavi",
-                    "Lansiranje i slijetanje Kite-a"
+                    "6 sati",
+                    "Probni tečaj",
+                    "Samospašavanje",
+                    "Ulaz i izlaz iz vode",
+                    "Kontrola zmajem i ponovno pokretanje iz vode",
+                    "Povlačenje tijela niz i u vjetar",
+                    "Početak vožnje te vožnja niz vjetar"
                 ]
             },
             {
                 "id": 3,
-                "price": 90,
-                "title": "Probni tečaj",
+                "price": 70,
+                "title": "Napredna lekcija",
                 "color": "#647EF9",
                 "description": [
-                    "2 sata",
-                    "Kite kontrola",
-                    "Body drag",
-                    "Kontrola rotacije tijela",
-                    "Steady Pull"
+                    "1 sat",
+                    "Vožnja u vjetar - bočna vožnja na prstima",
+                    "Teorija i pravila za skakanje",
+                    "Početni nivo za vještine slobodnog stila",
+                    "Surf daska i sl."
                 ]
             },
             {
                 "id": 4,
-                "price": 150,
-                "title": "Napredni tečaj",
+                "price": 100,
+                "title": "Privatna lekcija",
                 "color": "#FBB13D",
                 "description": [
-                    "3 sata",
-                    "Oprema",
-                    "Razni okreti",
-                    "Vožnja 'toeside'",
-                    "Skokovi i okreti"
-                ]
-            },
-            {
-                "id": 5,
-                "price": 55,
-                "title": "Single hour",
-                "color": "#ED0C09",
-                "description": [
-                    "Oprema",
-                    "Razni okreti",
-                    "Vožnja 'toeside'",
-                    "Skokovi i okreti"
+                    "1 sat",
+                    "Rad 1 na 1",
+                    "Individualna lekcija po Vašoj mjeri"
                 ]
             }
         ]
@@ -183,13 +170,23 @@
     "services": {
         "title": "Usluge",
         "content": [
-            { 
+            {
                 "id": 1,
+                "name": "Probni tečaj",
+                "image": "/img/kitesurf-maestral-4.jpg",
+                "text": "Ako još uvijek niste sigurni je li kitesurfing sport za vas onda je ovo pravi tečaj za vas.",
+                "description": [
+                    "U ovoj vrsti tečaja proći ćemo kroz sljedeće elemente koje kasnije možete koristiti i jednostavno nastaviti s početnim tečajem kada shvatite koliko je ovaj sport izazovan i nevjerojatan!",
+                    "Dvosatni tečaj otkrivanja uključuje osnovnu teoriju, upravljanje zmajem za treniranje, sigurnosni sustav i postavljanje zmaja te osnovnu kontrolu velikog zmaja."
+                ]
+            },
+            { 
+                "id": 2,
                 "name": "Početnički tečaj",
                 "image": "/img/kitesurf-maestral-3.jpg",
-                "text": "Ako ste početnik i želite naučiti glisirati na dasci ovo je opcija za vas.",
+                "text": "Na ovom tečaju naučit ćete sve elemente kitesurfanja, ustajanja na brod i vožnje niz vjetar. Nakon ovog tečaja, sljedeći korak bi bio poboljšati svoje vještine i početi uživati u svojoj novoj strasti za cijeli život!",
                 "description": [
-                    "Kako bi završili početnički tečaj potrebna su minimalno dva, najčešće tri dana. Okvirno ga možemo podijeliti u tri dijela.",
+                    "Da biste završili cijeli početni tečaj, potrebna su tri dana, svaki dan po 2 sata. Tečaj je podijeljen u tri koraka.",
                     "<h4>Savladavanje osnova</h4>",
                     "Teorija uključuje teren i vjetrove, zmajeve i ostalu opremu, sigurnosna pravila i pravila prednosti. Praktični dio uključuje upravljanje s dvolinijskim trainer zmajem. Naučit ćete osnove upravljanja zmajem i kako koristiti prozor vjetra i power zone kako bi kontrolirali količinu vuče zmaja.",
                     "<h4>Veliki kite</h4>",
@@ -200,20 +197,10 @@
                 ]
             },
             {
-                "id": 2,
-                "name": "Probni tečaj",
-                "image": "/img/kitesurf-maestral-4.jpg",
-                "text": "Ako ste početnik i samo želite naučiti upravljati velikim zmajem bez vožnje na dasci, ovo je opcija za vas.",
-                "description": [
-                    "Ako ste početnik i samo želite naučiti upravljati velikim zmajem bez vožnje na dasci, ovo je opcija za vas. Ako ste zainteresirani za kitesurfing ali niste sigurni da će to biti prava stvar za vas, probni tečaj je najbolji način da to provjerite.",
-                    "Prvo ćete vježbati na malom trainer kiteu da naučite osnove. Nakon toga ulazite u vodu s velikim zmajem i na kraju radite body drag."
-                ]
-            },
-            {
                 "id": 3,
-                "name": "Napredni tečaj",
+                "name": "Napredna lekcija",
                 "image": "/img/kitesurf-maestral-6.jpg",
-                "text": "Ovo je opcija za one koji još ne glisiraju na dasci, ali i one koji to već rade ali žele nadograditi vještinu.",
+                "text": "Ako već imate određeno znanje o kitesurfingu i želite unaprijediti svoje vještine na sljedeću razinu, onda je ovo savršena lekcija za vas.",
                 "description": [
                     "Ako već imate iskustva s kajtovima, npr. prošle godine ste počeli učiti ali još niste zadovoljni s vještinom, možemo vam pomoći da napredujete.",
                     "Ovo je opcija za one koji još ne glisiraju na dasci, ali i za one koji glisiraju ali žele usavršiti vještinu. Npr. možete raditi na vožnji u vjetar, različitim okretima, vožnji na prstima ili skokovima."
