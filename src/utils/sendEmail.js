@@ -6,7 +6,6 @@ const sendEmail = (data) => {
     return new Promise((resolve, reject) => {
         axios.post(host, { data })
             .then(response => {
-                console.log('response1', response);
                 resolve(response.data);
             })
             .catch(error => {

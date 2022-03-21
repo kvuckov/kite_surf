@@ -111,13 +111,15 @@ const Banner = props => {
         }
     `;
 
-    const renderBanners = () => [image2, image1, image3].map(image => <>
-        <div className={styles.banner} style={{ backgroundImage: `url(${image})` }}>
+    const renderBanners = () => [image1, image3].map((image, index) => <>
+        <div className={styles.banner} style={{ backgroundImage: `url(${image})`}}>
             <div className={styles.title}>
                 <span className={styles.title_first}>{translation[0]}</span>
                 <h1 className={styles.title_second}>{translation[1]}</h1>
                 <span className={styles.title_third}>{translation[2]}</span>
-                <Button onClick={() => props.history.push(routes.PRICING)} text={t("lessonButton")} medium={true} type={'primary'} className='banner_button' />
+                <div className={styles.banner_button_wrapper} >
+                    <Button onClick={() => props.history.push(routes.PRICING)} text={t("lessonButton")} medium={true} type={'primary'} className={styles.banner_button} />
+                </div>
             </div>
         </div>
     </>)

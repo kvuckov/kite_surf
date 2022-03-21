@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    background-position: 45% 50%;
+    background-position: 45% 0;
     align-items: center;
     justify-content: center;
 
@@ -33,6 +33,16 @@
         z-index: 1000;
         width: 50%;
     }
+
+    &_button {
+        height: 19px;
+
+        &_wrapper {
+            flex-grow: 4;
+            display: flex;
+            align-items: center;
+        }
+    }
 }
 
 .title {
@@ -41,6 +51,8 @@
     text-transform: uppercase;
     align-items: center;
     color: $darkBlue;
+    height: 400px;
+    justify-content: flex-start;
     
     @media (min-width: 992px) {
         align-items: unset;

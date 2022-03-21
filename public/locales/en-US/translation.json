@@ -8,9 +8,9 @@
             "link": "/services",
             "subLink": "/services_details",
             "subLinks": [
+                "Discovery course",
                 "Beginners course",
-                "Triel course",
-                "Improvement"
+                "Independent lesson"
             ]
         },
         { "id": 4, "name": "Pricing" , "link": "/pricing" },
@@ -40,7 +40,7 @@
                 "second": "Great spot",
                 "third": "Kitesurfing lessons on sand beaches in Northern Dalmatia"
             },
-            "description": "20 km north from the city of Zadar - more precisely in the vicinity of city of Nin. This is area with sand beaches and a lot of shallow waters. This is great for beginners and learning. The exact place depends on wind direction but all the beaches are nearby, we go to places where we can get the best wind."
+            "description": "20 km north from the city of Zadar - more precisely in the vicinity of the city of Nin. This is an area with sand beaches and a lot of shallow waters. This is great for beginners and learning. The spot is located in the perfect position which is convenient for a lot of different wind directions and that is all that is required for quality and safe learning."
         },
         "services": {
             "title": {
@@ -50,19 +50,19 @@
             },
             "cards": [
                 {
-                    "image": "/img/kitesurf-maestral-3.jpg",
-                    "title": "Beginners course",
-                    "text": "If you are a beginner and want to get up on the board beginners course is the option for you."
+                    "image": "/img/kitesurf-maestral-4.jpg",
+                    "title": "Discovery course",
+                    "text": "If you are still not sure if kitesurfing is a sport for you then this is the right course for you."
                 },
                 {
-                    "image": "/img/kitesurf-maestral-4.jpg",
-                    "title": "Trial course",
-                    "text": "If you are a beginner and just want to learn flying the big depowerable kite, trial course is the option for you."
+                    "image": "/img/kitesurf-maestral-3.jpg",
+                    "title": "Beginner course",
+                    "text": "In this course you will learn all the elements of kitesurfing, getting up on board, and riding downwind. After this course, the next step would be to improve your skills and start enjoying your new passion for a lifetime!"
                 },
                 {
                     "image": "/img/kitesurf-maestral-6.jpg",
-                    "title": "Improvers lessons",
-                    "text": "If you already have some kiting skills but want to improve, you can take improvers lessons. We can help you to make that leap to the next level."
+                    "title": "Independent lesson",
+                    "text": "If you already have some knowledge about kitesurfing and you want to improve your skills to the next level, then this is the perfect lesson for you."
                 }
             ]
         },
@@ -106,9 +106,8 @@
             "third": "Passion and obsession to freedom of movement."
         },
         "team": [
-            { "name": "Šime Vukman", "role": "Kite Instructor", "image": "/img/grey.jpeg" },
-            { "name": "Krešo", "role": "Kite Instructor", "image": "/img/grey.jpeg" },
-            { "name": "Grey G. Grey", "role": "Kite Assistent", "image": "/img/teacherGrey.jpg" }
+            { "name": "Vuko", "role": "Kite Instructor", "image": "/img/vuko.jpeg", "desctiptionLess": "Addicted to kitesurfing since 2016, after a couple of years of traveling worldwide I started teaching others all the beauty of this sport. Spending a lot", "descriptionMore": "of time in the water, visiting and exploring new places, chasing the wind developed me into an experienced instructor who likes to share the stoke and enjoy nature. When it's not windy I'm still above the ground highlining or free climbing where I'm finding my freedom." },
+            { "name": "Krešo", "role": "Kite Instructor", "image": "/img/kreso.jpeg", "desctiptionLess": "Started kiting in 2009 at the age of 31. Teaching kitesurfing throughout the Croatian coast since 2012. Over the winter", "descriptionMore": "I get out of the water and become a snowboarder and snowboarding teacher. Kiting brought me a positive and permanent lifestyle change: took me out of the office and brought me the excitement of adrenaline and freedom of movement. For me, it is a perfect getaway from the madness of the world we live in. It is my mission to help people find this passion too. Motto: it is never too late to start." }
         ]
     },
     "pricing": {
@@ -116,66 +115,54 @@
         "content": [
             {
                 "id": 1,
-                "price": 270,
-                "title": "Beginners course",
+                "price": 100,
+                "title": "Discovery course",
                 "color": "rgb(0,255,106)",
                 "description": [
-                    "6 hours",
-                    "Equipment",
-                    "Kite control",
-                    "Safety systems",
-                    "Kite Launch and landing"
+                    "2 hours",
+                    "Wind theory and wind window theory",
+                    "Trainer kite control",
+                    "Safety system and kite set up",
+                    "Basic big kite control"
                 ]
             },
             {
                 "id": 2,
-                "price": 490,
-                "title": "Beginners course",
-                "color": "rgb(0,255,106)",
+                "price": 360,
+                "title": "Beginner course",
+                "color": "#ED0C09",
                 "description": [
-                    "12 hours",
-                    "Equipment",
-                    "Kite control",
-                    "Safety systems",
-                    "Kite Launch and landing"
+                    "6 hours",
+                    "Discovery course",
+                    "Self-rescue",
+                    "Enter and exit the water",
+                    "Kite control and relaunch from the water",
+                    "Down wind and up wind body drag",
+                    "Water start and riding downwind"
                 ]
             },
             {
                 "id": 3,
-                "price": 90,
-                "title": "Trial course",
+                "price": 70,
+                "title": "Independent lesson",
                 "color": "#647EF9",
                 "description": [
-                    "2 hours",
-                    "Kite control",
-                    "Body drag with board",
-                    "Body rotation control",
-                    "Steady Pull"
+                    "1 hour",
+                    "Riding up wind - toe side riding",
+                    "Theory and rules for jumping",
+                    "Entry level for freestyle skills",
+                    "Strapless surfboard and etc"
                 ]
             },
             {
                 "id": 4,
-                "price": 150,
-                "title": "Improvers package",
+                "price": 100,
+                "title": "Private lesson",
                 "color": "#FBB13D",
                 "description": [
-                    "3 hours",
-                    "Equipment",
-                    "Various turns",
-                    "Riding toeside",
-                    "Jumping or spinning"
-                ]
-            },
-            {
-                "id": 5,
-                "price": 55,
-                "title": "Single hour",
-                "color": "#ED0C09",
-                "description": [
-                    "Equipment",
-                    "Various turns",
-                    "Riding toeside",
-                    "Jumping or spinning"
+                    "1 hour",
+                    "1 on 1",
+                    "Individual lesson adjusted to you're needs"
                 ]
             }
         ]
@@ -183,37 +170,37 @@
     "services": {
         "title": "Services",
         "content": [
-            { 
+            {
                 "id": 1,
+                "name": "Discovery course",
+                "image": "/img/kitesurf-maestral-4.jpg",
+                "text": "If you are still not sure if kitesurfing is a sport for you then this is the right course for you.",
+                "description": [
+                    "In this type of course we will go through the following elements that you can use later and easily continue with beginner's course when you realize how challenging and amazing this sport is!",
+                    "2 hour discovery course includes basic theory, flying the trainer kite, safety system and kite set up and basic big kite control."
+                ]
+            },
+            { 
+                "id": 2,
                 "name": "Beginner course",
                 "image": "/img/kitesurf-maestral-3.jpg",
-                "text": "If you are a beginner and want to get up on the board beginners course is the option for you.",
+                "text": "In this course you will learn all the elements of kitesurfing, getting up on board and riding downwind. After this course next step would be to improve your skills and start enjoying your new passion for lifetime!",
                 "description": [
-                    "To complete the full beginners course it takes minimum of two, usually three days. The course can be divided into three steps.",
+                    "In order to complete the full beginner's course, it takes three days, 2 hours each day. The course is divided into three steps.",
                     "<h4>Learning the basics</h4>",
-                    "First you need to learn about the beach and local winds, kites and other gear, safety and right of way rules. You will start flying on a 2 line trainer kite and learn how to use the wind window and power zones to control the delivery of pull from the kite.",
+                    "First you will learn basic wind theory, safety and right of way rules. You will start flying on a 2 line trainer kite and learn how to use the wind window and power zones to control the delivery of pull from the kite.",
                     "<h4>The big kite</h4>",
                     "Time to introduce the big depowerable 4 (or 5) line kite. Before you go in the water with the kite you will learn how to set up the kite and use its safety systems. Flying the big depowerable kite includes proper use of the control bar, water relaunch, power diving the kite, controling the kite in underpowered and overpowered conditions, controling the kite with one hand, self rescue and more.",
                     "<h4>Board time</h4>",
-                    "Once you have the big kite under control, you are ready for getting up on the board. You will learn to power dive the kite to get on the board and adjust leg and body position when you feel the pull from the kite. Once you pick up speed, it is all about holding the balance on board and edging. At this stage, any previous snowboarding/wakeboarding/skateboarding experience should help you to get going more easily.",
+                    "Once you have the big kite under control, you are ready for getting up on the board. You will learn to power dive the kite to get on the board and adjust leg and body position when you feel the pull from the kite. Once you pick up speed, it is all about holding the balance on board and edging. At this stage, any previous snowboarding/ wakeboarding/ skateboarding experience should help you to get going more easily.",
                     "Each step is individual and it all depends on you, your concentration, will and desire. There is a possibility of the need for more or less hours to achieve the desired goal."
                 ]
             },
             {
-                "id": 2,
-                "name": "Trial course",
-                "image": "/img/kitesurf-maestral-4.jpg",
-                "text": "If you are a beginner and just want to learn flying the big depowerable kite, trial course is the option for you.",
-                "description": [
-                    "If you are a beginner and just want to learn flying the big depowerable kite, this is the option for you. Let's say you are attracted to kitesurfing but you are not sure if it will be the right thing for you. Trial course is the best way to find out.",
-                    "2 hour trial includes basic theory, flying the trainer kite, setting up the big kite and flying the big kite, and finally - body drag."
-                ]
-            },
-            {
                 "id": 3,
-                "name": "Improvment",
+                "name": "Independent lesson",
                 "image": "/img/kitesurf-maestral-6.jpg",
-                "text": "If you already have some kiting skills but want to improve, you can take improvers lessons. We can help you to make that leap to the next level.",
+                "text": "If you already have some knowledge about kitesurfing and you want to improve your skills to the next level, then this is the perfect lesson for you.",
                 "description": [
                     "If you already have some basic experience, let's say you already took some lessons last year but you are still not happy with your skill, we can help you to make the leap to the next level.",
                     "This is also option for those more advanced who already have riding skills but want to improve, whether it is riding upwind, learning to make different turns, riding toeside, jumping or spinning. In kitesurfing there is no end to possibilities."
@@ -224,7 +211,7 @@
     "contact": {
         "title": "Contact",
         "content": [
-            { "title": "Phone", "text": "+1 201 918 47 81</br>+1 201 890 81 40", "icon": "img/phone.png" },
+            { "title": "Phone", "text": "<a href='tel:+385 99 802 1363'>+385 99 802 1363</a></br><a href='tel:+385 91 271 1115'>+385 91 271 1115</a>", "icon": "img/phone.png" },
             { "title": "Adress", "text": "Virski put 23233</br>Privlaka, Zadar County", "icon": "img/location.png" },
             { "title": "Email", "text": "<a href='mailto:info@maestral-kitesurfing.com'>info@maestral-kitesurfing.com</a>", "icon": "img/email.png" }
         ]
@@ -249,7 +236,8 @@
         "requiredError" : "* This field is required",
         "nameError": "* Name must contain at least two letters",
         "emailError": "* Email is not valid",
-        "thankYou": "<h2>THANK YOU!</h2></br>Your message has been recieved and we will contact you shortly to follow-up. If you would like to speak to someone immediately feel free to call."
+        "thankYou": "<h2>THANK YOU!</h2></br>Your message has been recieved and we will contact you shortly to follow-up. If you would like to speak to someone immediately feel free to call.",
+        "errorMessage": "<h2>Ooops!</h2></br>Something went wrong.</br>Please contect us directly:</br></br><a href='mailto:info@maestral-kitesurfing.com'>info@maestral-kitesurfing.com</a></br></br>or try again later!"
     },
     "footer": {
         "title": "Sand beaches in Privlaka are the well-known kite spot in the lagoon.",

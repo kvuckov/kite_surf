@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
+import { RiErrorWarningLine } from "react-icons/ri";
 
 import sendEmail from '../../../utils/sendEmail';
 
@@ -11,6 +12,7 @@ const EmailModal = props => {
     const { t } = useTranslation();
     const emailContent = t("email", { returnObjects: true });
     const [ send, setSend ] = React.useState(false);
+    const [ error, setError ] = React.useState(false);
     const [ name, setName ] = React.useState('');
     const [ email, setEmail ] = React.useState('');
     const [ text, setText ] = React.useState('');
@@ -47,9 +49,6 @@ const EmailModal = props => {
 
     const validateSubmit = async () => {
         if (validateName(name) && validateEmail(email)) {
-            // TODO here goes api call
-            console.log('Send email to', name, email, text, 'with this data', props.data)
-
             const list = props.data.description.map(item => `<li>${item}</li>`);
             const html = `<ul>${list.join('')}</ul>`;
             const sendData = {
@@ -60,32 +59,51 @@ const EmailModal = props => {
                 title: props.data.title,
                 content: html
             }
-            const response = await sendEmail(sendData);
-            console.log('response2', response);
-            // props.onClick();
-            setSend(true);
+            sendEmail(sendData).then(() => setSend(true)).catch(() => setError(true));
+        }
+    }
+
+
+    const renderMessage = () => {
+        if (send) {
+            return (
+                <div className={styles.thankyou}>
+                    <MdOutlineMarkEmailRead 
+                        className={styles.thankyou__icon}
+                    />
+                    <p className={styles.thankyou_content} dangerouslySetInnerHTML={{ __html: emailContent.thankYou }} />
+                    <Button text={'OK'} medium={true} type={'primary'} className={styles.emailModal_button} onClick={props.onClick}/>
+                </div>
+            )
+        }
+        if (error) {
+            return (
+                <div className={styles.thankyou}>
+                    <RiErrorWarningLine 
+                        className={styles.thankyou__icon}
+                    />
+                    <p className={styles.thankyou_content} dangerouslySetInnerHTML={{ __html: emailContent.errorMessage }} />
+                    <Button text={'OK'} medium={true} type={'primary'} className={styles.emailModal_button} onClick={props.onClick}/>
+                </div>
+            )
         }
     }
 
     return (
         <div className={styles.emailModal} onClick={props.onClick}>
             <div className={styles.emailModal_modal} onClick={e => e.stopPropagation()}>
-                {!send ? <>
+                {!send && !error ? <>
+                    <h4>{props.data.description[0]} {props.data.title}</h4>
                     <h5>{emailContent.title}</h5>
-                    <input placeholder="Name" onChange={event => !!validateName(event.target.value) && setName(event.target.value)} />
+                    <input placeholder="Name*" onChange={event => !!validateName(event.target.value) && setName(event.target.value)} />
                     <span className={styles.error_message}>{nameErrorMessage}</span>
-                    <input placeholder="Email" onChange={event => !!validateEmail(event.target.value) && setEmail(event.target.value)} />
+                    <input placeholder="Email*" onChange={event => !!validateEmail(event.target.value) && setEmail(event.target.value)} />
                     <span className={styles.error_message}>{emailErrorMessage}</span>
                     <textarea placeholder="Write a message..." onChange={event => setText(event.target.value)} />
+                    <input placeholder="Phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></input>
                     <Button text={emailContent.submit} medium={true} type={'primary'} className={styles.emailModal_button} onClick={() => validateSubmit()}/>
                 </>
-                : <div className={styles.thankyou}>
-                    <MdOutlineMarkEmailRead 
-                        className={styles.thankyou__icon}
-                    />
-                    <p className={styles.thankyou_content} dangerouslySetInnerHTML={{ __html: emailContent.thankYou }} />
-                    <Button text={'OK'} medium={true} type={'primary'} className={styles.emailModal_button} onClick={props.onClick}/>
-                </div>}
+                : renderMessage()}
             </div>
         </div>
     );

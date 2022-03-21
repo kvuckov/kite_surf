@@ -31,11 +31,11 @@
             max-width: 350px;
             background-color: white;
             box-sizing: border-box;
+            cursor: pointer;
 
             @media (max-width: 767px) {
                 padding: 40px 15px;
             }
-
 
             img {
                 width: 75%;
@@ -53,6 +53,21 @@
 
             p {
                 margin: 0;
+            }
+
+            &_description {
+                font-weight: 100;
+                text-align: center;
+                margin-top: 10px;
+                flex-direction: column;
+
+                p {
+                    color: #2EA043;
+                    font-weight: 300;
+                    text-decoration: underline;
+                    cursor: pointer;
+                    margin-top: 5px;
+                }
             }
         }
     }
