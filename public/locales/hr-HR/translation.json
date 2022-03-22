@@ -211,7 +211,7 @@
     "contact": {
         "title": "Kontakt",
         "content": [
-            { "title": "Phone", "text": "+1 201 918 47 81</br>+1 201 890 81 40", "icon": "img/phone.png" },
+            { "title": "Phone", "text": "<a href='tel:+385 99 802 1363'>+385 99 802 1363</a></br><a href='tel:+385 91 271 1115'>+385 91 271 1115</a>", "icon": "img/phone.png" },
             { "title": "Adress", "text": "Virski put 23233</br>Privlaka, Zadar County", "icon": "img/location.png" },
             { "title": "Email", "text": "<a href='mailto:info@maestral-kitesurfing.com'>info@maestral-kitesurfing.com</a>", "icon": "img/email.png" }
         ]
