@@ -14,7 +14,7 @@ import "slick-carousel/slick/slick-theme.css";
 // import Banner from '../banner';
 
 import image1 from '../../assets/img/spot-velebit.jpg'
-import image2 from '../../assets/img/kitesurf-maestral-3.jpg'
+import image2 from '../../assets/img/spot-onshore.jpg'
 import image3 from '../../assets/img/maestralKitesurf.jpg'
 import arrow from '../../assets/svg/banner-arrow.svg'
 
@@ -111,7 +111,7 @@ const Banner = props => {
         }
     `;
 
-    const renderBanners = () => [image1, image3].map((image, index) => <>
+    const renderBanners = () => [image1, image3, image2].map((image, index) => <>
         <div className={styles.banner} style={{ backgroundImage: `url(${image})`}}>
             <div className={styles.title}>
                 <span className={styles.title_first}>{translation[0]}</span>

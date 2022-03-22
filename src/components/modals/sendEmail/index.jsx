@@ -15,6 +15,7 @@ const EmailModal = props => {
     const [ error, setError ] = React.useState(false);
     const [ name, setName ] = React.useState('');
     const [ email, setEmail ] = React.useState('');
+    const [ phone, setPhone ] = React.useState('');
     const [ text, setText ] = React.useState('');
     const [ nameErrorMessage, setNameErrorMessage ] = React.useState('');
     const [ emailErrorMessage, setEmailErrorMessage ] = React.useState('');
@@ -55,6 +56,7 @@ const EmailModal = props => {
                 name,
                 email,
                 text,
+                phone,
                 price: props.data.price,
                 title: props.data.title,
                 content: html
@@ -99,8 +101,8 @@ const EmailModal = props => {
                     <span className={styles.error_message}>{nameErrorMessage}</span>
                     <input placeholder="Email*" onChange={event => !!validateEmail(event.target.value) && setEmail(event.target.value)} />
                     <span className={styles.error_message}>{emailErrorMessage}</span>
+                    <input className={styles.emailModal_modal_phone} placeholder="Phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" onChange={event => setPhone(event.target.value)} />
                     <textarea placeholder="Write a message..." onChange={event => setText(event.target.value)} />
-                    <input placeholder="Phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></input>
                     <Button text={emailContent.submit} medium={true} type={'primary'} className={styles.emailModal_button} onClick={() => validateSubmit()}/>
                 </>
                 : renderMessage()}

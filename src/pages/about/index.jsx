@@ -7,6 +7,7 @@ import Banner from '../../components/smallBanner';
 import Advantages from '../../components/advantages';
 import Heading from '../../components/UI/heading';
 import Carousel from '../../components/carousel';
+import TeamCard from '../../components/teamCard';
 
 import BannerImage from '../../assets/img/small_banner.jpg';
 
@@ -17,7 +18,7 @@ import image4 from '../../assets/img/maestral-privlaka.jpg';
 import image5 from '../../assets/img/kitesurf-maestral-5.jpg';
 import image6 from '../../assets/img/kitesurf-maestral-2.jpg';
 import image7 from '../../assets/img/maestral-spot.jpg';
-import image8 from '../../assets/img/kitesurf-maestral-4.jpg';
+import image8 from '../../assets/img/spot-onshore.jpg';
 import image9 from '../../assets/img/topView.jpg';
 import image10 from '../../assets/img/kitesurf-maestral-3.jpg';
 import image11 from '../../assets/img/maestralKitesurf.jpg';
@@ -89,7 +90,6 @@ const PHOTO_SET = [
 ];
 const About = props => {
     const { t } = useTranslation();
-    const [showDescription, setShowDescription] = React.useState(-1);
     const services = t("services.content", { returnObjects: true });
     const about = t("about", { returnObjects: true });
 
@@ -100,17 +100,7 @@ const About = props => {
         </div>
     );
 
-    const renderTeam = () => Array.isArray(about.team) && about.team.map((member, index) =>
-        <div key={index} className={style.about_team_member}>
-            <img src={member.image}/>
-            <h5>{member.name}</h5>
-            <p>{member.role}</p>
-            <div className={style.about_team_member_description}>
-                {member.desctiptionLess}{showDescription !== index && '...'}{showDescription !== index && <p onClick={() => setShowDescription(index)}>Show more</p>}
-                {showDescription === index && <>{member.descriptionMore}<p onClick={() => setShowDescription(-1)}>Show less</p></>}
-            </div>
-        </div>
-    );
+    const renderTeam = () => Array.isArray(about.team) && about.team.map((member, index) => <TeamCard key={index} data={member} />);
 
     return (
         <div className={style.about}>
@@ -118,7 +108,7 @@ const About = props => {
             <Advantages />
             <div className={style.about_team}>
                 <Heading content={about.teamTitle} theme={'center'} style={style.title} />
-                <Carousel data={renderTeam()} firstBreakpoint={1450} secondBreakpoint={1000} height='auto'/>
+                <Carousel data={renderTeam()} firstBreakpoint={1450} secondBreakpoint={1000} height='auto' slidesToShow={2} />
             </div>
             <div className={style.about_services}>
                 <Heading content={about.servicesTitle} theme={'center'} style={style.title}/>
