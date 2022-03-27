@@ -4,6 +4,7 @@ import { MdOutlineMarkEmailRead } from "react-icons/md";
 import { RiErrorWarningLine } from "react-icons/ri";
 
 import sendEmail from '../../../utils/sendEmail';
+import Loader from '../../loader';
 
 import styles from './styles.module.scss';
 import Button from '../../UI/button';
@@ -13,6 +14,7 @@ const EmailModal = props => {
     const emailContent = t("email", { returnObjects: true });
     const [ send, setSend ] = React.useState(false);
     const [ error, setError ] = React.useState(false);
+    const [ loading, setLoading ] = React.useState(false);
     const [ name, setName ] = React.useState('');
     const [ email, setEmail ] = React.useState('');
     const [ phone, setPhone ] = React.useState('');
@@ -50,6 +52,7 @@ const EmailModal = props => {
 
     const validateSubmit = async () => {
         if (validateName(name) && validateEmail(email)) {
+            setLoading(true);
             const list = props.data.description.map(item => `<li>${item}</li>`);
             const html = `<ul>${list.join('')}</ul>`;
             const sendData = {
@@ -61,7 +64,7 @@ const EmailModal = props => {
                 title: props.data.title,
                 content: html
             }
-            sendEmail(sendData).then(() => setSend(true)).catch(() => setError(true));
+            sendEmail(sendData).then(() => {setSend(true); setLoading(false);}).catch(() => {setError(true); setLoading(false);});
         }
     }
 
@@ -89,12 +92,13 @@ const EmailModal = props => {
                 </div>
             )
         }
+        if(loading) return <Loader />
     }
 
     return (
         <div className={styles.emailModal} onClick={props.onClick}>
             <div className={styles.emailModal_modal} onClick={e => e.stopPropagation()}>
-                {!send && !error ? <>
+                {!send && !error && !loading? <>
                     <h4>{props.data.description[0]} {props.data.title}</h4>
                     <h5>{emailContent.title}</h5>
                     <input placeholder="Name*" onChange={event => !!validateName(event.target.value) && setName(event.target.value)} />
