@@ -9,8 +9,9 @@ import Heading from '../../components/UI/heading';
 import Carousel from '../../components/carousel';
 import TeamCard from '../../components/teamCard';
 
-import BannerImage from '../../assets/img/small_banner.jpg';
+import { convertToWebp } from '../../utils/convertToWebp';
 
+import BannerImage from '../../assets/img/small_banner.jpg';
 import image1 from '../../assets/img/spot-landscape.jpg';
 import image2 from '../../assets/img/kitesurf.jpg';
 import image3 from '../../assets/img/kitesurf-maestral.jpg';
@@ -23,6 +24,8 @@ import image9 from '../../assets/img/topView.jpg';
 import image10 from '../../assets/img/kitesurf-maestral-3.jpg';
 import image11 from '../../assets/img/maestralKitesurf.jpg';
 import image12 from '../../assets/img/spot-velebit.jpg';
+import image13 from '../../assets/img/grey_sea.JPG';
+import image15 from '../../assets/img/riding_in_sea.jpg';
 import * as routes from '../../constants/routes';
 import * as style from './styles.module.scss';
 
@@ -39,6 +42,11 @@ const PHOTO_SET = [
     },
     {
         src: image3,
+        width: 4,
+        height: 3
+    },
+    {
+        src: image13,
         width: 4,
         height: 3
     },
@@ -78,6 +86,11 @@ const PHOTO_SET = [
         height: 1
     },
     {
+        src: image15,
+        width: 4,
+        height: 3
+    },
+    {
         src: image11,
         width: 4,
         height: 3
@@ -95,7 +108,7 @@ const About = props => {
 
     const renderServices = () => Array.isArray(services) && services.map((service, index) =>
         <div key={index} className={style.about_services_card} onClick={() => props.history.push({ pathname: routes.SERVICES, state: { index: index + 1 }})}>
-            <img src={service.image} className={style.hovered} />
+            <img src={convertToWebp(service.image)} className={style.hovered} alt={service.name} />
             <h3>{service.name}</h3>
         </div>
     );

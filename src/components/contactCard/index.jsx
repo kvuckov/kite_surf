@@ -1,4 +1,5 @@
 import React from 'react';
+import { convertToWebp } from '../../utils/convertToWebp';
 
 import style from './styles.module.scss';
 
@@ -6,7 +7,7 @@ const ContactCard = props => {
 
     return (
         <div className={style.contactCard}>
-            <img src={props.data.icon} />
+            <img src={convertToWebp(props.data.icon)} alt={props.data.title} />
             <h6>{props.data.title}</h6>
             <p dangerouslySetInnerHTML={{ __html: props.data.text }} />
         </div>

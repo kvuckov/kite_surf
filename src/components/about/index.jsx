@@ -11,6 +11,8 @@ import Heading from '../UI/heading';
 import Text from '../UI/borderText';
 import Button from '../UI/button';
 
+import { convertToWebp } from '../../utils/convertToWebp';
+
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const About = props => {
@@ -79,7 +81,7 @@ const About = props => {
                 </div>
             </div>
             <div className={[styles.about_right, 'right'].join(' ')}>
-                <img src={Image} />
+                <img src={convertToWebp(Image)} alt='Man riding kite' />
             </div>
         </div>
     );
