@@ -30,7 +30,7 @@ const HamburgerMenu = props => {
     };
 
     const renderLanguage = () => language.map((lang, index) => {
-        return lang.id !== currentLanguage.id && <li key={index} onClick={() => handleCountryClick(lang)}><span><img src={lang.icon} />{lang.name}</span></li>;
+        return lang.id !== currentLanguage.id && <li key={index} onClick={() => handleCountryClick(lang)}><span><img src={lang.icon} alt={`Country - ${lang.name}`}/>{lang.name}</span></li>;
     });
 
     const renderNavigation = () => Array.isArray(navigation) && navigation.map(item => {
@@ -86,7 +86,7 @@ const HamburgerMenu = props => {
                         { renderNavigation() }
                     </ul>
                     <div className={[style.country_selector, openLang ? style.open : ''].join(' ')}>
-                        <span onClick={() => setOpenLang(!openLang)} ><img src={currentLanguage.icon}/>{currentLanguage.name}</span>
+                        <span onClick={() => setOpenLang(!openLang)} ><img src={currentLanguage.icon} alt={`Country - ${currentLanguage.name}`}/>{currentLanguage.name}</span>
                         <ul>
                             { renderLanguage() }
                         </ul>

@@ -2,6 +2,8 @@ import React from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from "react-i18next";
+import { convertToWebp } from '../../utils/convertToWebp';
+
 import Zadar from '../../assets/img/zadarPoint.png';
 import styles from './styles.module.scss';
 
@@ -41,27 +43,12 @@ const Location = () => {
                 toggleActions: 'play none none reverse'
             }
         });
-        // gsap.fromTo('.right', {
-        //     top: '100px',
-        //     left: '100px'
-        // }, {
-        //     duration: 3, 
-        //     top: 0,
-        //     left: 0,
-        //     ease: 'none',
-        //     scrollTrigger: {
-        //         id: `section-1`,
-        //         trigger: '.about',
-        //         start: 'top center+=100',
-        //         toggleActions: 'play none none reverse'
-        //     }
-        // });
     }, []);
 
     return (
         <div className={[styles.location, 'location'].join(' ')} >
             <div className={[styles.location_left, 'location_left'].join(' ')}>
-                <img src={Zadar} />
+                <img src={convertToWebp(Zadar)} alt='Zadar country | Spot point' />
             </div>
             <div className={[styles.location_right, 'location_right'].join(' ')}>
                 <Heading content={data.title} left={true} />

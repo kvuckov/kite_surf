@@ -11,21 +11,15 @@ import Slider from "react-slick";
 import styled from 'styled-components';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-// import Banner from '../banner';
 
-import image1 from '../../assets/img/spot-velebit.jpg'
-import image2 from '../../assets/img/spot-onshore.jpg'
+import image1 from '../../assets/img/kite_bridge.JPG'
+import image2 from '../../assets/img/board_in_sea.JPG'
 import image3 from '../../assets/img/maestralKitesurf.jpg'
 import arrow from '../../assets/svg/banner-arrow.svg'
 
 const Banner = props => {
     const { t } = useTranslation();
     const translation = t("home.banner", { returnObjects: true });
-    const sliderRef = React.useRef(null);
-
-    const handleSwipe = () => {
-        sliderRef.current.slickPause();
-    };
 
     const settings = {
         dots: true,
@@ -37,7 +31,6 @@ const Banner = props => {
         lazyLoad: 'progressive',
         autoplay: false,
         autoplaySpeed: 5000,
-        onSwipe: handleSwipe,
         responsive: [
             {
                 breakpoint: props.firstBreakpoint,
@@ -112,20 +105,20 @@ const Banner = props => {
     `;
 
     const renderBanners = () => [image1, image3, image2].map((image, index) => <>
-        <div className={styles.banner} style={{ backgroundImage: `url(${image})`}}>
-            <div className={styles.title}>
-                <span className={styles.title_first}>{translation[0]}</span>
+        <div className={styles.banner} style={{ backgroundImage: `url(${image})` }}>
+            <div className={styles.title} style={{ flexDirection: index === 1 && 'column-reverse', color: index === 1 && '#FBB13D' }}>
+                <span className={styles.title_first}>{index === 1 ? translation[2] : translation[0]}</span>
                 <h1 className={styles.title_second}>{translation[1]}</h1>
-                <span className={styles.title_third}>{translation[2]}</span>
-                <div className={styles.banner_button_wrapper} >
+                <span className={styles.title_third} style={{ color: index === 1 && '#FBB13D' }}>{index === 1 ? translation[0] : translation[2]}</span>
+                {index !== 1 && <div className={styles.banner_button_wrapper} >
                     <Button onClick={() => props.history.push(routes.PRICING)} text={t("lessonButton")} medium={true} type={'primary'} className={styles.banner_button} />
-                </div>
+                </div>}
             </div>
         </div>
     </>)
 
     return (
-        <StyledSlider {...settings} ref={sliderRef}>
+        <StyledSlider {...settings}>
             {renderBanners()}
         </StyledSlider>
     );

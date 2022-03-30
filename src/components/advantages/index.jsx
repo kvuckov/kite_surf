@@ -3,16 +3,11 @@ import { useTranslation } from "react-i18next";
 import weather from '../../assets/img/weather.png';
 import wave from '../../assets/img/wave.png';
 import board from '../../assets/img/boardIco.png';
+import { convertToWebp } from '../../utils/convertToWebp';
 
 import Heading from '../UI/heading';
 
 import style from './styles.module.scss';
-
-const content = {
-    first: "Advantages",
-    second: "Why Learn How To Kitesur With Us?",
-    third: "We want our clients to feel awesome and unique."
-}
 
 const Advantages = () => {
     const { t } = useTranslation();
@@ -22,15 +17,15 @@ const Advantages = () => {
             <Heading content={advantages.title} theme={'tertionary_opposite'}/>
             <div className={style.icon_boxes}>
                 <div className={style.icon_boxes_box}>
-                    <img src={weather} />
+                    <img src={convertToWebp(weather)} alt='Weather' />
                     <p>{advantages.weather}</p>
                 </div>
                 <div className={style.icon_boxes_box}>
-                    <img src={wave} />
+                    <img src={convertToWebp(wave)} alt='Wave'/>
                     <p>{advantages.wave}</p>
                 </div>
                 <div className={style.icon_boxes_box}>
-                    <img src={board} />
+                    <img src={convertToWebp(board)} alt='Board'/>
                     <p>{advantages.board}</p>
                 </div>
             </div>

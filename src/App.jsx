@@ -27,6 +27,12 @@ const App = () => {
 				<Route path={routes.PRICING} exact component={Pricing} />
 				<Route path={routes.CONTACT} exact component={Contact} />
 				<Route path={routes.FAQ} exact component={Faq} />
+				<Redirect from={["/zadar-area", "/de/zadar-region", "/hr/zadarska-zupanija", "/location", "/de/lage", "/hr/lokacija"]} to={routes.ABOUT} />
+				<Redirect from={["/school-program", "/de/schule-programm", "/hr/program-skole"]} to={routes.HOME_SERVICES} />
+				<Redirect from={["/beginners-course", "/de/anfanger-kurs", "/hr/pocetnicki-tecaj", "/trial-course-2", "/de/trial-kurs-2", "/hr/probni-tecaj", "/hr/nadogradnja-vjestine", "/improvers-lessons", "/de/fortgeschrittene-kurse"]} to={routes.SERVICES} />
+				<Redirect from={["/lesson-prices", "/de/lektion-preise", "/hr/cijene-tecajeva"]} to={routes.PRICING} />
+				<Redirect from={["/contact", "/de/kontakt-2", "/hr/kontakt"]} to={routes.CONTACT} />
+				<Redirect from={["/de", "/hr", "/pl"]} to={routes.ROOT} />
 				<Route render={() => (<Redirect to={routes.ROOT} />)} />
 			</Switch>
 			<Footer />
