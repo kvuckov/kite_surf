@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import { useTranslation } from "react-i18next";
+import { convertToWebp } from '../../utils/convertToWebp';
 
 import * as routes from '../../constants/routes';
 
@@ -12,9 +13,9 @@ import styled from 'styled-components';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-import image1 from '../../assets/img/kite_bridge.JPG'
-import image2 from '../../assets/img/board_in_sea.JPG'
-import image3 from '../../assets/img/maestralKitesurf.jpg'
+import image1 from '../../assets/img/kite_bridge.webp'
+import image2 from '../../assets/img/board_in_sea.webp'
+import image3 from '../../assets/img/maestralKitesurf.webp'
 import arrow from '../../assets/svg/banner-arrow.svg'
 
 const Banner = props => {

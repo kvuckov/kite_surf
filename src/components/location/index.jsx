@@ -2,7 +2,7 @@ import React from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from "react-i18next";
-import { convertToWebp } from '../../utils/convertToWebp';
+import { convertToWebp, get } from '../../utils/convertToWebp';
 
 import Zadar from '../../assets/img/zadarPoint.png';
 import styles from './styles.module.scss';
@@ -48,7 +48,7 @@ const Location = () => {
     return (
         <div className={[styles.location, 'location'].join(' ')} >
             <div className={[styles.location_left, 'location_left'].join(' ')}>
-                <img src={convertToWebp(Zadar)} alt='Zadar country | Spot point' />
+                <img src={convertToWebp(Zadar)} alt='Zadar country | Spot point' width={get(Zadar, 'width')} height={get(Zadar, 'height')}/>
             </div>
             <div className={[styles.location_right, 'location_right'].join(' ')}>
                 <Heading content={data.title} left={true} />
