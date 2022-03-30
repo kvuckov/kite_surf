@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import weather from '../../assets/img/weather.png';
 import wave from '../../assets/img/wave.png';
 import board from '../../assets/img/boardIco.png';
-import { convertToWebp } from '../../utils/convertToWebp';
+import { convertToWebp, get } from '../../utils/convertToWebp';
 
 import Heading from '../UI/heading';
 
@@ -17,15 +17,15 @@ const Advantages = () => {
             <Heading content={advantages.title} theme={'tertionary_opposite'}/>
             <div className={style.icon_boxes}>
                 <div className={style.icon_boxes_box}>
-                    <img src={convertToWebp(weather)} alt='Weather' />
+                    <img src={convertToWebp(weather)} alt='Weather' width={get(weather, 'width')} height={get(weather, 'height')}/>
                     <p>{advantages.weather}</p>
                 </div>
                 <div className={style.icon_boxes_box}>
-                    <img src={convertToWebp(wave)} alt='Wave'/>
+                    <img src={convertToWebp(wave)} alt='Wave' width={get(wave, 'width')} height={get(wave, 'height')}/>
                     <p>{advantages.wave}</p>
                 </div>
                 <div className={style.icon_boxes_box}>
-                    <img src={convertToWebp(board)} alt='Board'/>
+                    <img src={convertToWebp(board)} alt='Board' width={get(board, 'width')} height={get(board, 'height')}/>
                     <p>{advantages.board}</p>
                 </div>
             </div>

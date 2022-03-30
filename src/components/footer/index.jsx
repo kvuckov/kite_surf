@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
-import { convertToWebp } from '../../utils/convertToWebp';
+import { convertToWebp, get } from '../../utils/convertToWebp';
 import styles from './styles.module.scss';
 import logo from '../../assets/img/maestral2.png';
 import facebook from '../../assets/svg/facebook.svg';
@@ -14,7 +14,7 @@ const Footer = () => {
         <div className={styles.footer} >
             <div className={styles.footer_content}>
                 <div className={styles.footer_content_left}>
-                    <img src={convertToWebp(logo)} alt='Maestral Kitesurfing Logo' />
+                    <img src={convertToWebp(logo)} alt='Maestral Kitesurfing Logo' width={get(logo, 'width')} height={get(logo, 'height')}/>
                     <p>{footer.title}</p>
                     <div className={styles.social_links}>
                         <a href="https://www.facebook.com/KitesurfMaestral" target="_blank">

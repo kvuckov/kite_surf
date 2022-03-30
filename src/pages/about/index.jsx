@@ -9,7 +9,7 @@ import Heading from '../../components/UI/heading';
 import Carousel from '../../components/carousel';
 import TeamCard from '../../components/teamCard';
 
-import { convertToWebp } from '../../utils/convertToWebp';
+import { convertToWebp, get } from '../../utils/convertToWebp';
 
 import BannerImage from '../../assets/img/small_banner.jpg';
 import image1 from '../../assets/img/spot-landscape.jpg';
@@ -22,7 +22,7 @@ import image7 from '../../assets/img/maestral-spot.jpg';
 import image8 from '../../assets/img/spot-onshore.jpg';
 import image9 from '../../assets/img/topView.jpg';
 import image10 from '../../assets/img/kitesurf-maestral-3.jpg';
-import image11 from '../../assets/img/maestralKitesurf.jpg';
+import image11 from '../../assets/img/maestralKitesurf.webp';
 import image12 from '../../assets/img/spot-velebit.jpg';
 import image13 from '../../assets/img/grey_sea.JPG';
 import image15 from '../../assets/img/riding_in_sea.jpg';
@@ -108,7 +108,7 @@ const About = props => {
 
     const renderServices = () => Array.isArray(services) && services.map((service, index) =>
         <div key={index} className={style.about_services_card} onClick={() => props.history.push({ pathname: routes.SERVICES, state: { index: index + 1 }})}>
-            <img src={convertToWebp(service.image)} className={style.hovered} alt={service.name} />
+            <img src={convertToWebp(service.image)} className={style.hovered} alt={service.name} width={get(service.image, 'width')} height={get(service.image, 'height')}/>
             <h3>{service.name}</h3>
         </div>
     );

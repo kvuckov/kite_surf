@@ -12,3 +12,13 @@ export const convertToWebp = origUrl => {
         ? `${origUrl}${concatenationSymbol}fm=webp`
         : origUrl;
 };
+
+export const get = (obj, path, def) => {
+    const fullPath = path.replace(/\[/g, '.').replace(/]/g, '').split('.').filter(Boolean);
+
+    return fullPath.every(everyFunc) ? obj : def;
+
+    function everyFunc(step) {
+        return !(step && obj && (obj = obj[step]) === undefined);
+    }
+};

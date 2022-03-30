@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
 
-import { convertToWebp } from '../../utils/convertToWebp';
+import { convertToWebp, get } from '../../utils/convertToWebp';
 
 import Banner from '../../components/smallBanner';
 import Advantages from '../../components/advantages';
@@ -17,7 +17,7 @@ const ServicesHome = props => {
     const renderServices = () => Array.isArray(services.content) && services.content.map((service, index) => {
         return (
             <div key={index} className={styles.servicesHome_item} onClick={() => props.history.push({ pathname: routes.SERVICES, state: { index: index + 1 }})}>
-                <img src={convertToWebp(service.image)} alt={service.name} />
+                <img src={convertToWebp(service.image)} alt={service.name}  width={get(service.image, 'width')} height={get(service.image, 'height')}/>
                 <div>
                     <h2>{service.name}</h2>
                     <p>{service.text}</p>
