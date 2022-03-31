@@ -30,7 +30,7 @@ const Banner = props => {
         slidesToScroll: 1,
         initialSlide: 0,
         lazyLoad: 'progressive',
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 5000,
         responsive: [
             {
