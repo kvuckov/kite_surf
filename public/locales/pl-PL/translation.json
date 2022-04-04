@@ -9,8 +9,8 @@
             "subLink": "/services_details",
             "subLinks": [
                 "Kurs odkrywczy",
-                "Beginners course",
-                "Kurs dla początkujących"
+                "Kurs dla początkujących",
+                "Lekcja zaawansowana"
             ]
         },
         { "id": 4, "name": "Cennik" , "link": "/pricing" },
@@ -61,7 +61,7 @@
                 },
                 {
                     "image": "/img/kitesurf-maestral-6.jpg",
-                    "title": "Niezależna lekcja",
+                    "title": "Lekcja zaawansowana",
                     "text": "Jeśli masz już trochę wiedzy na temat kitesurfingu i chcesz podnieść swoje umiejętności na wyższy poziom to jest to lekcja idealna dla Ciebie."
                 }
             ]
@@ -144,7 +144,7 @@
             {
                 "id": 3,
                 "price": 70,
-                "title": "Niezależna lekcja",
+                "title": "Lekcja zaawansowana",
                 "color": "#647EF9",
                 "description": [
                     "1 godzina",
@@ -198,7 +198,7 @@
             },
             {
                 "id": 3,
-                "name": "Niezależna lekcja",
+                "name": "Lekcja zaawansowana",
                 "image": "/img/kitesurf-maestral-6.jpg",
                 "text": "Jeśli masz już trochę wiedzy na temat kitesurfingu i chcesz podnieść swoje umiejętności na wyższy poziom to jest to lekcja idealna dla Ciebie.",
                 "description": [

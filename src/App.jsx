@@ -27,12 +27,30 @@ const App = () => {
 				<Route path={routes.PRICING} exact component={Pricing} />
 				<Route path={routes.CONTACT} exact component={Contact} />
 				<Route path={routes.FAQ} exact component={Faq} />
-				<Redirect from={["/zadar-area", "/de/zadar-region", "/hr/zadarska-zupanija", "/location", "/de/lage", "/hr/lokacija"]} to={routes.ABOUT} />
-				<Redirect from={["/school-program", "/de/schule-programm", "/hr/program-skole"]} to={routes.HOME_SERVICES} />
-				<Redirect from={["/beginners-course", "/de/anfanger-kurs", "/hr/pocetnicki-tecaj", "/trial-course-2", "/de/trial-kurs-2", "/hr/probni-tecaj", "/hr/nadogradnja-vjestine", "/improvers-lessons", "/de/fortgeschrittene-kurse"]} to={routes.SERVICES} />
-				<Redirect from={["/lesson-prices", "/de/lektion-preise", "/hr/cijene-tecajeva"]} to={routes.PRICING} />
-				<Redirect from={["/contact", "/de/kontakt-2", "/hr/kontakt"]} to={routes.CONTACT} />
-				<Redirect from={["/de", "/hr", "/pl"]} to={routes.ROOT} />
+				<Redirect from={["/zadar-area", "/location"]} to={{ pathname: routes.HOME, state: { scroll: true, lang: 1 } }}/>
+				<Redirect from={["/de/zadar-region", "/de/lage"]} to={{ pathname: routes.HOME, state: { scroll: true, lang: 2 } }}/>
+				<Redirect from={["/hr/zadarska-zupanija", "/hr/lokacija"]} to={{ pathname: routes.HOME, state: { scroll: true, lang: 4 } }}/>
+				<Redirect from="/school-program" to={{ pathname: routes.HOME_SERVICES, state: { lang: 1 } }}/>
+				<Redirect from="/de/schule-programm" to={{ pathname: routes.HOME_SERVICES, state: { lang: 2 } }}/>
+				<Redirect from="/hr/program-skole" to={{ pathname: routes.HOME_SERVICES, state: { lang: 4 } }}/>
+				<Redirect from="/beginners-course" to={{ pathname: routes.SERVICES, state: { index: 1, lang: 1 } }}/>
+				<Redirect from="/de/anfanger-kurs" to={{ pathname: routes.SERVICES, state: { index: 1, lang: 2 } }}/>
+				<Redirect from="/hr/pocetnicki-tecaj" to={{ pathname: routes.SERVICES, state: { index: 1, lang: 4 } }}/>
+				<Redirect from="/trial-course-2" to={{ pathname: routes.SERVICES, state: { index: 2, lang: 1 } }}/>
+				<Redirect from="/de/trial-kurs-2" to={{ pathname: routes.SERVICES, state: { index: 2, lang: 2 } }}/>
+				<Redirect from="/hr/probni-tecaj" to={{ pathname: routes.SERVICES, state: { index: 2, lang: 4 } }}/>
+				<Redirect from="/improvers-lessons" to={{ pathname: routes.SERVICES, state: { index: 3, lang: 1 } }}/>
+				<Redirect from="/de/fortgeschrittene-kurse" to={{ pathname: routes.SERVICES, state: { index: 3, lang: 2 } }}/>
+				<Redirect from="/hr/nadogradnja-vjestine" to={{ pathname: routes.SERVICES, state: { index: 3, lang: 4 } }}/>
+				<Redirect from="/lesson-prices" to={{ pathname: routes.PRICING, state: { lang: 1 } }}/>
+				<Redirect from="/de/lektion-preise" to={{ pathname: routes.PRICING, state: { lang: 2 } }}/>
+				<Redirect from="/hr/cijene-tecajeva" to={{ pathname: routes.PRICING, state: { lang: 4 } }}/>
+				<Redirect from="/contact" to={{ pathname: routes.CONTACT, state: { lang: 1 } }}/>
+				<Redirect from="/de/kontakt-2" to={{ pathname: routes.CONTACT, state: { lang: 2 } }}/>
+				<Redirect from="/hr/kontakt" to={{ pathname: routes.CONTACT, state: { lang: 4 } }}/>
+				<Redirect from="/de" to={{ pathname: routes.ROOT, state: { lang: 2 } }}/>
+				<Redirect from="/pl" to={{ pathname: routes.ROOT, state: { lang: 3 } }}/>
+				<Redirect from="/hr" to={{ pathname: routes.ROOT, state: { lang: 4 } }}/>
 				<Route render={() => (<Redirect to={routes.ROOT} />)} />
 			</Switch>
 			<Footer />

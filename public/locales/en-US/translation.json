@@ -10,7 +10,7 @@
             "subLinks": [
                 "Discovery course",
                 "Beginners course",
-                "Independent lesson"
+                "Advanced lesson"
             ]
         },
         { "id": 4, "name": "Pricing" , "link": "/pricing" },
@@ -61,7 +61,7 @@
                 },
                 {
                     "image": "/img/kitesurf-maestral-6.jpg",
-                    "title": "Independent lesson",
+                    "title": "Advanced lesson",
                     "text": "If you already have some knowledge about kitesurfing and you want to improve your skills to the next level, then this is the perfect lesson for you."
                 }
             ]
@@ -144,7 +144,7 @@
             {
                 "id": 3,
                 "price": 70,
-                "title": "Independent lesson",
+                "title": "Advanced lesson",
                 "color": "#647EF9",
                 "description": [
                     "1 hour",
@@ -198,7 +198,7 @@
             },
             {
                 "id": 3,
-                "name": "Independent lesson",
+                "name": "Advanced lesson",
                 "image": "/img/kitesurf-maestral-6.jpg",
                 "text": "If you already have some knowledge about kitesurfing and you want to improve your skills to the next level, then this is the perfect lesson for you.",
                 "description": [

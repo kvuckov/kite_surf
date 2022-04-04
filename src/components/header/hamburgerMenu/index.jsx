@@ -13,13 +13,21 @@ const HamburgerMenu = props => {
     const [openLang, setOpenLang] = React.useState(false);
     const navigation = t("navigation", { returnObjects: true });
 
+    React.useEffect(() => {
+        if (props.location.state && props.location.state.lang) {
+            setCurrentLanguage(language[props.location.state.lang - 1]);
+            localStorage.setItem('lang', JSON.stringify(language[props.location.state.lang - 1]));
+            i18n.changeLanguage(language[props.location.state.lang - 1].lang);
+        }
+    }, [props.location.state]);
+
     const handleClick = () => {
         setOpen(!open);
     }
 
     const handleCountryClick = lang => {
         setCurrentLanguage(lang);
-        setOpenLang(!openLang)
+        setOpenLang(!openLang);
         localStorage.setItem('lang', JSON.stringify(lang));
         i18n.changeLanguage(lang.lang);
     };

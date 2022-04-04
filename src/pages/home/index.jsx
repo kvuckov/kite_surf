@@ -16,9 +16,17 @@ import Modal from '../../components/modals/sendEmail';
 
 const Home = props => {
     const { t } = useTranslation();
+    const locationSection = React.useRef(null);
     const services = t("home.services", { returnObjects: true });
     const [showModal, setShowModal] = React.useState(false);
-    const [ data, setData ] = React.useState()
+    const [ data, setData ] = React.useState();
+
+    React.useEffect(() => {
+        setTimeout(() => {
+            props.location.state && props.location.state.scroll && locationSection.current.scrollIntoView();
+            props.history.replace();
+        }, 0)
+    }, [props.location.state]);
 
     const renderCards = () => Array.isArray(services.cards) && services.cards.map((service, index) => {
         return <Card key={index} data={service} onClick={() => props.history.push({ pathname: routes.SERVICES, state: { index: index + 1 }})} />;
@@ -34,7 +42,7 @@ const Home = props => {
             {showModal && <Modal onClick={() => setShowModal(false)} data={data}/>}
             <Banner firstBreakpoint={1450} secondBreakpoint={1000}/>
             <About />
-            <Location />
+            <div ref={locationSection}><Location /></div>
             <div className={styles.services}>
                 <Heading content={services.title} style={styles.heading} />
                 { renderCards() }

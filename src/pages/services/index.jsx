@@ -37,7 +37,7 @@ const Services = props => {
                     </ul>
                 </div>
                 <div className={styles.services_content_right}>
-                    <img src={convertToWebp(Array.isArray(services) && services[currentService-1].image)} alt={Array.isArray(services) && services[currentService-1].name} />
+                    <img src={convertToWebp(Array.isArray(services) && services[currentService-1].image)} alt={services[currentService-1].name} />
                     <div className={styles.services_content_right_text}>
                         { renderContent() }
                         <Button text={t("lessonButton")} medium={true} type={'primary'} onClick={() => props.history.push(routes.PRICING)}/>

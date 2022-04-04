@@ -10,7 +10,7 @@
             "subLinks": [
                 "Entdeckungskurs",
                 "Anfängerkurs",
-                "Selbstständiger Unterricht"
+                "Fortgeschrittener Unterricht"
             ]
         },
         { "id": 4, "name": "Preise" , "link": "/pricing" },
@@ -61,7 +61,7 @@
                 },
                 {
                     "image": "/img/kitesurf-maestral-6.jpg",
-                    "title": "Selbstständiger Unterricht",
+                    "title": "Fortgeschrittener Unterricht",
                     "text": "Wenn Sie bereits etwas über Kitesurfen wissen und Ihre Fähigkeiten auf das nächste Level verbessern möchten, dann ist dies die perfekte Lektion für Sie."
                 }
             ]
@@ -144,7 +144,7 @@
             {
                 "id": 3,
                 "price": 70,
-                "title": "Selbstständiger Unterricht",
+                "title": "Fortgeschrittener Unterricht",
                 "color": "#647EF9",
                 "description": [
                     "1 Stunde",
@@ -198,7 +198,7 @@
             },
             {
                 "id": 3,
-                "name": "Selbstständiger Unterricht",
+                "name": "Fortgeschrittener Unterricht",
                 "image": "/img/kitesurf-maestral-6.jpg",
                 "text": "Wenn Sie bereits etwas über Kitesurfen wissen und Ihre Fähigkeiten auf das nächste Level verbessern möchten, dann ist dies die perfekte Lektion für Sie.",
                 "description": [
