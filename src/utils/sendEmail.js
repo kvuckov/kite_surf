@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// const host = "http://www.maestral-kitesurfing.com/api/v1/send-email"
-const host = "http://test.opg-vuckovic.com/api/v1/send-email"
+// const host = "http://maestral-kitesurfing.com/api/v1/send-email"
+const host = "http://test.maestral-kitesurfing.com/api/v1/send-email"
 
 const sendEmail = (data) => {
     return new Promise((resolve, reject) => {
