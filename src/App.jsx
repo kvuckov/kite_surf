@@ -33,12 +33,12 @@ const App = () => {
 				<Redirect from="/school-program" to={{ pathname: routes.HOME_SERVICES, state: { lang: 1 } }}/>
 				<Redirect from="/de/schule-programm" to={{ pathname: routes.HOME_SERVICES, state: { lang: 2 } }}/>
 				<Redirect from="/hr/program-skole" to={{ pathname: routes.HOME_SERVICES, state: { lang: 4 } }}/>
-				<Redirect from="/beginners-course" to={{ pathname: routes.SERVICES, state: { index: 1, lang: 1 } }}/>
-				<Redirect from="/de/anfanger-kurs" to={{ pathname: routes.SERVICES, state: { index: 1, lang: 2 } }}/>
-				<Redirect from="/hr/pocetnicki-tecaj" to={{ pathname: routes.SERVICES, state: { index: 1, lang: 4 } }}/>
-				<Redirect from="/trial-course-2" to={{ pathname: routes.SERVICES, state: { index: 2, lang: 1 } }}/>
-				<Redirect from="/de/trial-kurs-2" to={{ pathname: routes.SERVICES, state: { index: 2, lang: 2 } }}/>
-				<Redirect from="/hr/probni-tecaj" to={{ pathname: routes.SERVICES, state: { index: 2, lang: 4 } }}/>
+				<Redirect from="/beginners-course" to={{ pathname: routes.SERVICES, state: { index: 2, lang: 1 } }}/>
+				<Redirect from="/de/anfanger-kurs" to={{ pathname: routes.SERVICES, state: { index: 2, lang: 2 } }}/>
+				<Redirect from="/hr/pocetnicki-tecaj" to={{ pathname: routes.SERVICES, state: { index: 2, lang: 4 } }}/>
+				<Redirect from="/trial-course-2" to={{ pathname: routes.SERVICES, state: { index: 1, lang: 1 } }}/>
+				<Redirect from="/de/trial-kurs-2" to={{ pathname: routes.SERVICES, state: { index: 1, lang: 2 } }}/>
+				<Redirect from="/hr/probni-tecaj" to={{ pathname: routes.SERVICES, state: { index: 1, lang: 4 } }}/>
 				<Redirect from="/improvers-lessons" to={{ pathname: routes.SERVICES, state: { index: 3, lang: 1 } }}/>
 				<Redirect from="/de/fortgeschrittene-kurse" to={{ pathname: routes.SERVICES, state: { index: 3, lang: 2 } }}/>
 				<Redirect from="/hr/nadogradnja-vjestine" to={{ pathname: routes.SERVICES, state: { index: 3, lang: 4 } }}/>

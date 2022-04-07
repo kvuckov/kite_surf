@@ -101,7 +101,7 @@ const HamburgerMenu = props => {
                     </div>
                 </div>
             </div>
-            <div onTouchEnd={() => setOpen(!open)} style={{ width: 'calc(100% - 250px)', height: '100%' }}></div>
+            <div onTouchEnd={() => setOpen(!open)} onClick={() => setOpen(!open)} style={{ width: 'calc(100% - 250px)', height: '100%' }}></div>
         </div>
     );
 };

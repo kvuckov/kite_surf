@@ -6,6 +6,7 @@ import Button from '../../UI/button';
 
 const PricingCard = props => {
     const { t } = useTranslation();
+    const priceSign = t("pricing.priceSign");
 
     const renderDescription = () => props.data.description.map((item, index) => {
         return <li key={index}>{item}</li>
@@ -19,7 +20,7 @@ const PricingCard = props => {
                 { renderDescription() }
             </ul>
             <div className={styles.priceWrap}>
-                <span className={styles.priceWrap_sign}>€</span>
+                <span className={styles.priceWrap_sign}>{priceSign}</span>
                 <span className={styles.priceWrap_price}>{props.data.price}</span>
             </div>
             <Button text={t("lessonButton")} medium={true} type={'secondary'} onClick={props.onClick} className={styles.pricingCard_button}/>

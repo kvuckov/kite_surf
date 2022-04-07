@@ -112,6 +112,7 @@
     },
     "pricing": {
         "title": "Cennik",
+        "priceSign": "€",
         "content": [
             {
                 "id": 1,
@@ -211,7 +212,6 @@
     "contact": {
         "title": "Kontakt",
         "content": [
-            { "title": "Telefon", "text": "<a href='tel:+385 99 802 1363'>+385 99 802 1363</a></br><a href='tel:+385 91 271 1115'>+385 91 271 1115</a>", "icon": "img/phone.png" },
             { "title": "Adres", "text": "Virski put 23233</br>Privlaka, Zadar County", "icon": "img/location.png" },
             { "title": "Email", "text": "<a href='mailto:info@maestral-kitesurfing.com'>info@maestral-kitesurfing.com</a>", "icon": "img/email.png" }
         ]
@@ -236,7 +236,7 @@
         "requiredError" : "* To pole jest wymagane",
         "nameError": "* Imię musi zawierać co najmniej dwie litery",
         "emailError": "* Adres email jest nieprawidłowy",
-        "thankYou": "<h2>DZIĘKUJĘ CI!</h2></br>Twoja wiadomość została odebrana i wkrótce skontaktujemy się z Tobą, aby kontynuować. Jeśli chcesz z kimś porozmawiać od razu, zadzwoń.",
+        "thankYou": "<h2>DZIĘKUJĘ CI!</h2></br>Twoja wiadomość została odebrana i wkrótce skontaktujemy się z Tobą, aby kontynuować.",
         "errorMessage": "<h2>Ooops!</h2></br>Coś poszło nie tak.</br>Skontaktuj się z nami bezpośrednio:</br></br><a href='mailto:info@maestral-kitesurfing.com'>info@maestral-kitesurfing.com</a></br></br>lub spróbuj ponownie później!"
     },
     "footer": {

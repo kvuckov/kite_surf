@@ -7,7 +7,7 @@ import styles from './styles.module.scss';
 
 import BannerImage from '../../assets/img/small_banner.jpg';
 
-const Contact = props => {
+const Contact = () => {
     const { t } = useTranslation();
     const contact = t("contact", { returnObjects: true });
 

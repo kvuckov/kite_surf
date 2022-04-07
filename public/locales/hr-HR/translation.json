@@ -112,10 +112,11 @@
     },
     "pricing": {
         "title": "Cijene",
+        "priceSign": "kn",
         "content": [
             {
                 "id": 1,
-                "price": 100,
+                "price": 750,
                 "title": "Probni tečaj",
                 "color": "rgb(0,255,106)",
                 "description": [
@@ -128,7 +129,7 @@
             },
             {
                 "id": 2,
-                "price": 360,
+                "price": 2625,
                 "title": "Početnički tečaj",
                 "color": "#ED0C09",
                 "description": [
@@ -143,7 +144,7 @@
             },
             {
                 "id": 3,
-                "price": 70,
+                "price": 525,
                 "title": "Napredna lekcija",
                 "color": "#647EF9",
                 "description": [
@@ -156,7 +157,7 @@
             },
             {
                 "id": 4,
-                "price": 100,
+                "price": 750,
                 "title": "Privatna lekcija",
                 "color": "#FBB13D",
                 "description": [
@@ -211,7 +212,6 @@
     "contact": {
         "title": "Kontakt",
         "content": [
-            { "title": "Phone", "text": "<a href='tel:+385 99 802 1363'>+385 99 802 1363</a></br><a href='tel:+385 91 271 1115'>+385 91 271 1115</a>", "icon": "img/phone.png" },
             { "title": "Adress", "text": "Virski put 23233</br>Privlaka, Zadar County", "icon": "img/location.png" },
             { "title": "Email", "text": "<a href='mailto:info@maestral-kitesurfing.com'>info@maestral-kitesurfing.com</a>", "icon": "img/email.png" }
         ]
@@ -236,7 +236,8 @@
         "requiredError" : "* Ovo polje je obavezno",
         "nameError": "* Ime mora sadržavati barem dva slova",
         "emailError": "* Email nije ispravan",
-        "thankYou": "<h2>Hvala!</h2></br>Vaša poruka je primljena i uskoro ćemo vas kontaktirati radi daljnjeg postupanja. Ako želite s nekim razgovarati odmah slobodno nazovite."
+        "thankYou": "<h2>Hvala!</h2></br>Vaša poruka je primljena i uskoro ćemo vas kontaktirati radi daljnjeg postupanja.",
+        "errorMessage": "<h2>Ooops!</h2></br>Nešto je pošlo po krivu.</br>Molimo kontaktirajte nas direktno:</br></br><a href='mailto:info@maestral-kitesurfing.com'>info@maestral-kitesurfing.com</a></br></br>ili pokušajte kasnije!"
     },
     "footer": {
         "title": "Pješčane plaže u Privlaci poznato su mjesto za kajtanje u laguni.",

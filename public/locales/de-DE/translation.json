@@ -112,6 +112,7 @@
     },
     "pricing": {
         "title": "Preise",
+        "priceSign": "€",
         "content": [
             {
                 "id": 1,
@@ -211,7 +212,6 @@
     "contact": {
         "title": "Kontaktieren",
         "content": [
-            { "title": "Phone", "text": "<a href='tel:+385 99 802 1363'>+385 99 802 1363</a></br><a href='tel:+385 91 271 1115'>+385 91 271 1115</a>", "icon": "img/phone.png" },
             { "title": "Adress", "text": "Virski put 23233</br>Privlaka, Zadar County", "icon": "img/location.png" },
             { "title": "E-mail", "text": "<a href='mailto:info@maestral-kitesurfing.com'>info@maestral-kitesurfing.com</a>", "icon": "img/email.png" }
         ]
@@ -236,7 +236,8 @@
         "requiredError" : "* Dieses Feld wird benötigt",
         "nameError": "* Der Name muss mindestens zwei Buchstaben enthalten",
         "emailError": "* Email ist ungültig",
-        "thankYou": "<h2>Danke!</h2></br>Ihre Nachricht ist bei uns eingegangen und wir werden uns in Kürze mit Ihnen in Verbindung setzen, um nachzufassen. Wenn Sie sofort mit jemandem sprechen möchten, rufen Sie einfach an."
+        "thankYou": "<h2>Danke!</h2></br>Ihre Nachricht ist bei uns eingegangen und wir werden uns in Kürze mit Ihnen in Verbindung setzen, um nachzufassen.",
+        "errorMessage": "<h2>Ooops!</h2></br>Etwas ist schief gelaufen.</br>Bitte kontaktieren Sie uns direkt:</br></br><a href='mailto:info@maestral-kitesurfing.com'>info@maestral-kitesurfing.com</a></br></br>oder versuchen Sie es später erneut!"
     },
     "footer": {
         "title": "Sandstrände in Privlaka sind die bekannten Kitespots in der Lagune.",
