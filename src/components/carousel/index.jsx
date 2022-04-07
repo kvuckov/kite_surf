@@ -70,9 +70,17 @@ const Carousel = props => {
         }
         .slick-slide {
             height: inherit;
+
+            @media (max-width: 600px) {
+                height: auto;
+            }
         }
         .slick-track {
             display: flex;
+
+            @media (max-width: 600px) {
+                align-items: center;
+            }
         }
     `;
 
