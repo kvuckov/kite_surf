@@ -48,6 +48,10 @@ const App = () => {
 				<Redirect from="/contact" to={{ pathname: routes.CONTACT, state: { lang: 1 } }}/>
 				<Redirect from="/de/kontakt-2" to={{ pathname: routes.CONTACT, state: { lang: 2 } }}/>
 				<Redirect from="/hr/kontakt" to={{ pathname: routes.CONTACT, state: { lang: 4 } }}/>
+				<Route path="/hr/dvodnevna-skola-snowboarda-na-sljemenu" exact component={() => {
+					window.location.href = 'https://google.com';
+					return null;
+				}}/>
 				<Redirect from="/de" to={{ pathname: routes.ROOT, state: { lang: 2 } }}/>
 				<Redirect from="/pl" to={{ pathname: routes.ROOT, state: { lang: 3 } }}/>
 				<Redirect from="/hr" to={{ pathname: routes.ROOT, state: { lang: 4 } }}/>
