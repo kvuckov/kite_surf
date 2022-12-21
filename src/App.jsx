@@ -49,7 +49,7 @@ const App = () => {
 				<Redirect from="/de/kontakt-2" to={{ pathname: routes.CONTACT, state: { lang: 2 } }}/>
 				<Redirect from="/hr/kontakt" to={{ pathname: routes.CONTACT, state: { lang: 4 } }}/>
 				<Route path="/hr/dvodnevna-skola-snowboarda-na-sljemenu" exact component={() => {
-					window.location.href = 'https://google.com';
+					window.location.href = 'https://snowboard.maestral-kitesurfing.com';
 					return null;
 				}}/>
 				<Redirect from="/de" to={{ pathname: routes.ROOT, state: { lang: 2 } }}/>
