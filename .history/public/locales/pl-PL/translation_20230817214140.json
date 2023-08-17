@@ -116,7 +116,7 @@
         "content": [
             {
                 "id": 1,
-                "price": 110,
+                "price": 100,
                 "title": "Kurs odkrywczy",
                 "color": "rgb(0,255,106)",
                 "description": [                  
@@ -129,7 +129,7 @@
             },
             {
                 "id": 2,
-                "price": 420,
+                "price": 360,
                 "title": "Kurs dla początkujących",
                 "color": "#ED0C09",
                 "description": [         
@@ -144,7 +144,7 @@
             },
             {
                 "id": 3,
-                "price": 85,
+                "price": 70,
                 "title": "Lekcja zaawansowana",
                 "color": "#647EF9",
                 "description": [
@@ -157,7 +157,7 @@
             },
             {
                 "id": 4,
-                "price": 120,
+                "price": 100,
                 "title": "Lekcja prywatna",
                 "color": "#FBB13D",
                 "description": [        
